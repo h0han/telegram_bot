@@ -415,7 +415,7 @@ def rule(update, context):
                     text = "**🍀Our 7 Rules🍀**\n\n1. Raise your LUCK's energy through fun and lucky words.\n2. Being kind to all other members, server staff, and hosts helps to make your LUCK positive.\n3. Don't discuss or ask about other LUCKY friends' personal information.\n4. Don't leak important information (phone number, email, wallet, address, wallet balance, seed statement, etc.) to protect your $LUCK.\n5. Rude and bad behavior becomes a factor that hinders the energy of your LUCK. (Hate of homosexuality, racism, and/or sexist remarks, abusive language, etc.)\n6. Don't send dangerous chats such as swear words, pornography, nudity, and gore. This place should be filled with only positive energy.\n7. FUD has no effect on your luck.",
                     parse_mode = "Markdown")
 
-def giveaway(update, context):
+def airdrop(update, context):
     bot = telepot.Bot(TOKEN)
     bot.sendMessage(chat_id = '@official_LUCK_community',
                    text = "✨GIVEAWAY Event for Pre-sale Participants✨\n\n🎁$LUCK TOKENS GIVEAWAY FOR EARLY ADOPTERS!🎁\nLUCK is glad to announce the upcoming pre-sale of its utility token $LUCK with GIVEAWAY for Early adopters. The prize pool of the Giveaway is around 2,000,000 tokens which equal $2,000!\nThere will be around 800 winners. Giveaway is for Lucky friends and lasts till 21st Jan 2022 09:00 AM UTC. At this time there will be taken snapshots to determine loyalty of pre-sale participants.\n\n💕Who's eligible?💕\nWho made the minimum buy\n\n🏆Lucky winners🏆\n(a) 77,777 $LUCK tokens for 7 people who made the maximum buy\n(b) 7,777 $LUCK tokens for 77 people who purchase more than 1BNB (First-come, first-served basis)\n(c) 777 $LUCK tokens for 777 people who entered all the <selection questions>\n\n🔍Information🔍\nProgress period : ~2022.01.21 (until the end of presale)\nRewards payment period : the end of February 2022\nEvent contents or schedule may be adjusted depending on the number of event participants.\nEvent inquiry : [luck@luck.com](mailto:luck@luck.com)\n\nTo participate in the LUCK Giveaway please complete the tasks below.\n✔️If an illegal method (account/name theft, bug, abusing, etc.) is confirmed, it will be excluded from payment.\n✔️Please submit the Google Form only once for the first time.\n✔️You must stay in the Telegram room until the reward is paid.\n✔️Incorrect answers to the anti-abusing quiz may result in exclusion from winning. Please choose carefully.\n\n✔️Detail\n: [https://docs.google.com/document/d/1dqP2i4_yzv0VJFr39F2yGGJ0w1jNaUGHfKTk9qwIhk8/edit?usp=sharing](https://docs.google.com/document/d/1dqP2i4_yzv0VJFr39F2yGGJ0w1jNaUGHfKTk9qwIhk8/edit?usp=sharing)\n🍀Good luck!🍀",
@@ -429,7 +429,7 @@ def main():
     print("Operating well!")
     dp.add_handler(CommandHandler("shill", social_link))
     dp.add_handler(CommandHandler("rule", rule))
-    dp.add_handler(CommandHandler("giveaway", giveaway))
+    dp.add_handler(CommandHandler("airdrop", airdrop))
 #     dp.add_handler(CommandHandler("start", help))
 #     dp.add_handler(CommandHandler("help", help))
     dp.add_handler(CommandHandler("welcome", set_welcome))
