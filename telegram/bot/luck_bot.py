@@ -398,7 +398,7 @@ def social_link(update, context):
     try:
         bot.sendPhoto(chat_id='@official_LUCK_community',
               photo="https://drive.google.com/file/d/1beWQBoRy3Cf5Wz3hLNQhE0w0ZsViEP26/view?usp=sharing",
-              caption="*💖 WHY IS $LUCK TO SUCCESS? 💖*\n💌 LUCKY CHAIN LETTERS are very effective in spreading our $LUCK. \n💌 The reward system for ALL CONTRIBUTORS, both recipients and senders \n💌 REFERRAL REWARDS = If someone accesses my link and goes through a simple procedure, the token is rewarded \n\n*💰 $LUCK Token 💰*\n💵 1. REWARD for CONTRIBUTORS \n💶 2. NFT Project : We will create a reward structure to drop tokens to NFT holders or NFTs to token holders. \n💷 3. STAKING & GOVERNANCE \n \n*🔗 LUCK Official Links 🔗*\n▹Homepage : [https://luck.io/en/](https://luck.io/en/) \n▹LUCK Official Telegram : [https://t.me/official_LUCK_announcement](https://t.me/official_LUCK_announcement) \n▹LUCK Official Twitter : [https://twitter.com/official_LUCK_](https://twitter.com/official_LUCK_) \n▹LUCK Official Reddit : [https://www.reddit.com/user/official_LUCK_](https://www.reddit.com/user/official_LUCK_)",
+              caption="*💖 WHY IS $LUCK TO SUCCESS? 💖*\n💌 LUCKY CHAIN LETTERS are very effective in spreading our $LUCK. \n💌 The reward system for ALL CONTRIBUTORS, both recipients and senders \n💌 REFERRAL REWARDS = If someone accesses my link and goes through a simple procedure, the token is rewarded \n\n*💰 $LUCK Token 💰*\n💵 1. REWARD for CONTRIBUTORS \n💶 2. NFT Project : We will create a reward structure to drop tokens to NFT holders or NFTs to token holders. \n💷 3. STAKING & GOVERNANCE \n\n",
               reply_markup = mu,
               parse_mode = "Markdown")
         
