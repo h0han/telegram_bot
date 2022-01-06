@@ -396,8 +396,13 @@ def social_link(update, context):
     mu = MU(inline_keyboard = [[btn1], [btn2], [btn3], [btn4]])
 
     try:
-        bot.sendPhoto(chat_id='@official_LUCK_community',
-              photo="https://drive.google.com/file/d/1RW2zC1Z5AwNjDBlLK6R4sevf_iz6ex3n/view?usp=sharing",
+        # bot.sendPhoto(chat_id='@official_LUCK_community',
+        #       photo="https://drive.google.com/file/d/1RW2zC1Z5AwNjDBlLK6R4sevf_iz6ex3n/view?usp=sharing",
+        #       caption="*💖 WHY IS $LUCK TO SUCCESS? 💖*\n💌 LUCKY CHAIN LETTERS are very effective in spreading our $LUCK. \n💌 The reward system for ALL CONTRIBUTORS, both recipients and senders \n💌 REFERRAL REWARDS = If someone accesses my link and goes through a simple procedure, the token is rewarded \n\n*💰 $LUCK Token 💰*\n💵 1. REWARD for CONTRIBUTORS \n💶 2. NFT Project : We will create a reward structure to drop tokens to NFT holders or NFTs to token holders. \n💷 3. STAKING & GOVERNANCE \n\n",
+        #       reply_markup = mu,
+        #       parse_mode = "Markdown")
+        bot.sendAnimation(chat_id='@official_LUCK_community',
+              photo="https://drive.google.com/file/d/10wGjQezfG7pdW6PspMh5sZNoYHHW_JvA/view?usp=sharing",
               caption="*💖 WHY IS $LUCK TO SUCCESS? 💖*\n💌 LUCKY CHAIN LETTERS are very effective in spreading our $LUCK. \n💌 The reward system for ALL CONTRIBUTORS, both recipients and senders \n💌 REFERRAL REWARDS = If someone accesses my link and goes through a simple procedure, the token is rewarded \n\n*💰 $LUCK Token 💰*\n💵 1. REWARD for CONTRIBUTORS \n💶 2. NFT Project : We will create a reward structure to drop tokens to NFT holders or NFTs to token holders. \n💷 3. STAKING & GOVERNANCE \n\n",
               reply_markup = mu,
               parse_mode = "Markdown")
