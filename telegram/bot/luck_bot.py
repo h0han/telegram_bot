@@ -407,7 +407,8 @@ def social_link(update, context):
         #       caption="*💖 WHY IS $LUCK TO SUCCESS? 💖*\n💌 LUCKY CHAIN LETTERS are very effective in spreading our $LUCK. \n💌 The reward system for ALL CONTRIBUTORS, both recipients and senders \n💌 REFERRAL REWARDS = If someone accesses my link and goes through a simple procedure, the token is rewarded \n\n*💰 $LUCK Token 💰*\n💵 1. REWARD for CONTRIBUTORS \n💶 2. NFT Project : We will create a reward structure to drop tokens to NFT holders or NFTs to token holders. \n💷 3. STAKING & GOVERNANCE \n\n",
         #       reply_markup = mu,
         #       parse_mode = "Markdown")
-        bot.sendVideo(chat_id='@official_LUCK_community', video= "./telegram_bot/telegram/bot/fig/baby_get_luck.mp4")
+        bot.sendMessage(chat_id = '@official_LUCK_community', text = os.getcwd())
+        # bot.sendVideo(chat_id='@official_LUCK_community', video= "./telegram_bot/telegram/bot/fig/baby_get_luck.mp4")
         # bot.sendVideo(chat_id='@official_LUCK_community', video= "https://drive.google.com/file/d/1kPdUfC1n-XKBP84QqVNMIxfylRJFYNfJ/view?usp=sharing")
         
         
