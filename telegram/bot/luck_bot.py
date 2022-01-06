@@ -397,7 +397,7 @@ def social_link(update, context):
 
     try:
         bot.sendPhoto(chat_id='@official_LUCK_community',
-              photo="https://drive.google.com/file/d/1wtv4wMddBqvei2dp4q0HxxWIgHmZ0YoE/view?usp=sharing",
+              photo="https://drive.google.com/file/d/1gY8J8YlgtC3OZGIUjzGw-loj9Ys5tnxX/view?usp=sharing",
               caption="*💖 WHY IS $LUCK TO SUCCESS? 💖*\n💌 LUCKY CHAIN LETTERS are very effective in spreading our $LUCK. \n💌 The reward system for ALL CONTRIBUTORS, both recipients and senders \n💌 REFERRAL REWARDS = If someone accesses my link and goes through a simple procedure, the token is rewarded \n\n*💰 $LUCK Token 💰*\n💵 1. REWARD for CONTRIBUTORS \n💶 2. NFT Project : We will create a reward structure to drop tokens to NFT holders or NFTs to token holders. \n💷 3. STAKING & GOVERNANCE \n\n",
               reply_markup = mu,
               parse_mode = "Markdown")
