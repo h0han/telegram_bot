@@ -389,10 +389,10 @@ def error(update, context, **kwargs):
 def social_link(update, context):
 #     if msg['text'] == "link":
     bot = telepot.Bot(TOKEN)
-    btn1 = BT(text = "Official Website", url = "https://xd.adobe.com/view/2314682e-3f11-491b-9c1e-1fe804a3e242-7647/", callback_data = "1")
-    btn2 = BT(text = "Official Announcement Telegram Channel", url = "https://t.me/official_LUCK_announcement", callback_data = "2")
-    btn3 = BT(text = "Official Twitter", url = "https://twitter.com/official_LUCK_", callback_data = "3")
-    btn4 = BT(text = "Official Reddit", url = "https://www.reddit.com/user/official_LUCK_", callback_data = "4")
+    btn1 = BT(text = "🍀 Official Website 🍀", url = "https://xd.adobe.com/view/2314682e-3f11-491b-9c1e-1fe804a3e242-7647/", callback_data = "1")
+    btn2 = BT(text = "🍀 Official Announcement Telegram Channel 🍀", url = "https://t.me/official_LUCK_announcement", callback_data = "2")
+    btn3 = BT(text = "🍀 Official Twitter 🍀", url = "https://twitter.com/official_LUCK_", callback_data = "3")
+    btn4 = BT(text = "🍀 Official Reddit 🍀", url = "https://www.reddit.com/user/official_LUCK_", callback_data = "4")
     mu = MU(inline_keyboard = [[btn1], [btn2], [btn3], [btn4]])
 
     try:
@@ -414,7 +414,7 @@ def rule(update, context):
 
 def airdrop(update, context):
     bot = telepot.Bot(TOKEN)
-    btn = BT(text = "Visit LUCK AIRDROP page", url = "", callback_data = "1")
+    btn = BT(text = "🍀 Visit LUCK AIRDROP page 🍀", url = "", callback_data = "1")
     mu = MU(inline_keyboard = [[btn]])
     bot.sendMessage(chat_id = '@official_LUCK_community',
                    text = "*✨ AIRDROP Event for Pre-sale Participants ✨*\n\n*🎁 $LUCK TOKENS AIRDROP FOR EARLY ADOPTERS! 🎁*\n✔️ AIRDROP Event starts 2022-01-25\n✔️ AIRDROP Event ends 2022-01-27\n✔️ Airdrop Link: Go to Airdrop\n✔️ Total value: 50,000,000 $LUCK +a\n\n*💕 Who's eligible? 💕*\nPre-sale Participants\n\n*🏆 Lucky winners 🏆*\n✨ 7,777,777 $LUCK tokens for 3 people who made the maximum buy\n✨ 777,777 $LUCK tokens for 7 people who purchase more than 1BNB (First-come, first-served basis)\n✨ 77,777 $LUCK tokens for all people who submit this form\n\n*Visit this LUCK airdrop page*\n👉 (link)\n\n Requirements:\n✔️ E-Mail required\n✔️ Wallet address required\n✔️ Made a minimum buy on pink sale\n✔️ Solve Anti-Abusing Quiz\n\n*🍀 Good luck! 🍀*",
@@ -423,7 +423,7 @@ def airdrop(update, context):
 
 def whitelist(update, context):
     bot = telepot.Bot(TOKEN)
-    btn = BT(text = "Visit LUCK WHITELIST page", url = "", callback_data = "1")
+    btn = BT(text = "🍀 Visit LUCK WHITELIST page 🍀", url = "", callback_data = "1")
     mu = MU(inline_keyboard = [[btn]])
     bot.sendMessage(chat_id = '@official_LUCK_community',
                    text = "*✨ WHITELIST ANNOUNCEMENT ✨*\n\n*Please join the campaign quickly  ：*\n👉 (link)\n\n🍀 Participate to be on the $LUCK Whitelist!\n🍀 Apply for the whitelist, create your referral link, and get $LUCK!\n\n*⏰ Event Date ⏰*\n13. Jan. 2022 09:00 AM (UTC)  - 24. Jan. 2022 09:00 AM (UTC)\nWINNERS WILL BE ANNOUNCED OUR OFFICIAL CHANNEL AFTER THE END OF THIS EVENT\n\n*🗣 The more friends you refer, greater the chances you'll win!*\n🔸 1st place: 1 BNB (full allocation)\n🔸 2nd place: 0.7 BNB (half allocation)\n🔸 3rd place:  0.3 BNB (one third allocation)\n\n",
@@ -432,10 +432,10 @@ def whitelist(update, context):
 
 def presale(update, context):
     bot = telepot.Bot(TOKEN)
-    btn = BT(text = "✨ PRESALE ANNOUNCEMENT ✨", url = "https://www.pinksale.finance/#/launchpad\n\n", callback_data = "1")
+    btn = BT(text = "🍀 PRESALE ANNOUNCEMENT 🍀", url = "https://www.pinksale.finance/#/launchpad\n\n", callback_data = "1")
     mu = MU(inline_keyboard = [[btn]])
     bot.sendMessage(chat_id = '@official_LUCK_community',
-                   text = "*✨ PRESALE ANNOUNCEMENT ✨*\n\n🚨 OFFICIAL LINK FOR PRESALE 🚨\n👉 https://www.pinksale.finance/#/launchpad\n\nWe will have the following structure:\n\n*- First Come First Served ( FCFS )*\n\n*- SOFT CAP   : 50 BNB*\n*- HARD CAP  : 100 BNB*\n\n*- MIN BUY     : 0.1 BNB*\n*- MAX BUY    : 2 BNB*\n\n🍀 Part 1 : *WHITELIST ROUND*\nSTART TIME:  09:00 AM UTC 25 Jan\nEND TIME:      09:00 AM UTC 26 Jan\n\n🍀 Part 2 : *PUBLIC ROUND*\nSTART TIME:  09:00 AM UTC 26 Jan\nEND TIME:      09:00 AM UTC 27 Jan\n\n🍀 Part 3 : You will be able to *trade $LUCK on PANCAKESWAP* at 10:00 AM UTC 27 Jan\n\n*🍀 LUCK Token Address (BEP-20)*\n👉(token address)\n\n🚀 *Presale Rate　: 1 BNB* = 30,000,000 *LUCK*\n🚀 *Listing Rate    : 1 BNB* = 25,510,000 *LUCK*\n\n*Unsold Tokens : BURN🔥*\n",
+                   text = "*✨ PRESALE ANNOUNCEMENT ✨*\n\n🚨 OFFICIAL LINK FOR PRESALE 🚨\n👉 https://www.pinksale.finance/#/launchpad\n\nWe will have the following structure:\n\n*- First Come First Served ( FCFS )*\n\n*- SOFT CAP   : 50 BNB*\n*- HARD CAP  : 100 BNB*\n\n*- MIN BUY     : 0.1 BNB*\n*- MAX BUY    : 2 BNB*\n\n🍀 Part 1 : *WHITELIST ROUND*\n         START TIME : 09:00 AM UTC 25 Jan\n         END TIME     : 09:00 AM UTC 26 Jan\n\n🍀 Part 2 : *PUBLIC ROUND*\n         START TIME : 09:00 AM UTC 26 Jan\n         END TIME     : 09:00 AM UTC 27 Jan\n\n🍀 Part 3 : You will be able to *trade $LUCK on PANCAKESWAP* at 10:00 AM UTC 27 Jan\n\n*🍀 LUCK Token Address (BEP-20)*\n👉(token address)\n\n🚀 *Presale Rate　: 1 BNB* = 30,000,000 *LUCK*\n🚀 *Listing Rate   : 1 BNB* = 25,510,000 *LUCK*\n\n*Unsold Tokens : BURN🔥*\n",
                    reply_markup = mu,
                    parse_mode = "Markdown")
 
