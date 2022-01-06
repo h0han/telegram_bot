@@ -409,8 +409,8 @@ def social_link(update, context):
         #       parse_mode = "Markdown")
         # bot.sendMessage(chat_id = '@official_LUCK_community', text = os.getcwd())
         # /home/centos/ryujaewan.com-onc9
-        bot.sendVideo(chat_id='@official_LUCK_community', video= os.getcwd() + "/telegram_bot/telegram/bot/fig/baby_get_luck.gif")
-        # bot.sendVideo(chat_id='@official_LUCK_community', video= "https://drive.google.com/file/d/1kPdUfC1n-XKBP84QqVNMIxfylRJFYNfJ/view?usp=sharing")
+        # bot.sendVideo(chat_id='@official_LUCK_community', video= os.getcwd() + "/telegram_bot/telegram/bot/fig/baby_get_luck.mp4")
+        bot.sendVideo(chat_id='@official_LUCK_community', video= "https://t.me/official_LUCK_community/185")
         
         
     except Exception as e:    # 모든 예외의 에러 메시지를 출력할 때는 Exception을 사용
