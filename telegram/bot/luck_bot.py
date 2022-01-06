@@ -402,7 +402,7 @@ def social_link(update, context):
         #       reply_markup = mu,
         #       parse_mode = "Markdown")
         bot.sendAnimation(chat_id='@official_LUCK_community',
-              animation=".\fig\baby_get_luck.mp4",
+              animation="https://www.youtube.com/watch?v=LCetNA5tUTE",
               caption="*💖 WHY IS $LUCK TO SUCCESS? 💖*\n💌 LUCKY CHAIN LETTERS are very effective in spreading our $LUCK. \n💌 The reward system for ALL CONTRIBUTORS, both recipients and senders \n💌 REFERRAL REWARDS = If someone accesses my link and goes through a simple procedure, the token is rewarded \n\n*💰 $LUCK Token 💰*\n💵 1. REWARD for CONTRIBUTORS \n💶 2. NFT Project : We will create a reward structure to drop tokens to NFT holders or NFTs to token holders. \n💷 3. STAKING & GOVERNANCE \n\n",
               reply_markup = mu,
               parse_mode = "Markdown")
