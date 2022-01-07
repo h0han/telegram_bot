@@ -9,6 +9,7 @@ import sys
 from html import escape
 import os
 import csv
+import os.path
 
 import pickledb
 
@@ -416,32 +417,39 @@ def spread(update, context):
     btn4 = BT(text = "🍀 Official Reddit 🍀", url = "https://www.reddit.com/user/official_LUCK_", callback_data = "4")
     mu = MU(inline_keyboard = [[btn1], [btn2], [btn3], [btn4]])
 
-    chat_id = [1, 2, 3]
-    # f = open(os.getcwd() + "/telegram_bot/telegram/bot/spread_test.csv", 'r', encoding = 'utf-8')
-    # rdr = csv.reader(f)
-    # for line in rdr:
-    #     chat_id.append(line[0])
-    # f.close()
+    chat_id = []
+    f = open(os.getcwd() + "/telegram_bot/telegram/bot/spread_test.csv", 'r', encoding = 'utf-8')
+    rdr = csv.reader(f)
+    for line in rdr:
+        chat_id.append(line[0])
+    f.close()
+
+    file = os.getcwd() + "/telegram_bot/telegram/bot/spread_test.csv"
+
+    if os.path.isfile(file):
+        bot.sendMessage(chat_id = '@hermes_test_group', text = "Yes, it is a file")
+    elif os.path.isdir(file):
+        bot.sendMessage(chat_id = '@hermes_test_group', text = "Yes, it is a directory")
 
     # chat_id = ['@official_LUCK_community', '@hermes_test_group']
 
-    try:
-        bot.sendVideo(chat_id = '@hermes_test_group',
-            video="https://t.me/hermes_test_group/125",
-            caption=len(chat_id),
-            reply_markup = mu,
-            parse_mode = "Markdown")
+    # try:
+    #     bot.sendVideo(chat_id = '@hermes_test_group',
+    #         video="https://t.me/hermes_test_group/125",
+    #         caption=len(chat_id),
+    #         reply_markup = mu,
+    #         parse_mode = "Markdown")
 
-        # for i in chat_id:
-        #     bot.sendVideo(chat_id = i,
-        #         video="https://t.me/hermes_test_group/125",
-        #         caption="*💖 WHY IS $LUCK TO SUCCESS? 💖*\n💌 LUCKY CHAIN LETTERS are very effective in spreading our $LUCK. \n💌 The reward system for ALL CONTRIBUTORS, both recipients and senders \n💌 REFERRAL REWARDS = If someone accesses my link and goes through a simple procedure, the token is rewarded \n\n*💰 $LUCK Token 💰*\n💵 1. REWARD for CONTRIBUTORS \n💶 2. NFT Project : We will create a reward structure to drop tokens to NFT holders or NFTs to token holders. \n💷 3. STAKING & GOVERNANCE \n\n",
-        #         reply_markup = mu,
-        #         parse_mode = "Markdown")
+    #     # for i in chat_id:
+    #     #     bot.sendVideo(chat_id = i,
+    #     #         video="https://t.me/hermes_test_group/125",
+    #     #         caption="*💖 WHY IS $LUCK TO SUCCESS? 💖*\n💌 LUCKY CHAIN LETTERS are very effective in spreading our $LUCK. \n💌 The reward system for ALL CONTRIBUTORS, both recipients and senders \n💌 REFERRAL REWARDS = If someone accesses my link and goes through a simple procedure, the token is rewarded \n\n*💰 $LUCK Token 💰*\n💵 1. REWARD for CONTRIBUTORS \n💶 2. NFT Project : We will create a reward structure to drop tokens to NFT holders or NFTs to token holders. \n💷 3. STAKING & GOVERNANCE \n\n",
+    #     #         reply_markup = mu,
+    #     #         parse_mode = "Markdown")
         
         
-    except Exception as e:    # 모든 예외의 에러 메시지를 출력할 때는 Exception을 사용
-        print('예외가 발생했습니다.', e)
+    # except Exception as e:    # 모든 예외의 에러 메시지를 출력할 때는 Exception을 사용
+    #     print('예외가 발생했습니다.', e)
     
     
 def rule(update, context):
