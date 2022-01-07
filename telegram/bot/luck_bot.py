@@ -397,20 +397,37 @@ def social_link(update, context):
     mu = MU(inline_keyboard = [[btn1], [btn2], [btn3], [btn4]])
 
     try:
+        bot.sendVideo(chat_id = '@official_LUCK_community',
+            video="https://t.me/official_LUCK_community/198",
+            caption="*💖 WHY IS $LUCK TO SUCCESS? 💖*\n💌 LUCKY CHAIN LETTERS are very effective in spreading our $LUCK. \n💌 The reward system for ALL CONTRIBUTORS, both recipients and senders \n💌 REFERRAL REWARDS = If someone accesses my link and goes through a simple procedure, the token is rewarded \n\n*💰 $LUCK Token 💰*\n💵 1. REWARD for CONTRIBUTORS \n💶 2. NFT Project : We will create a reward structure to drop tokens to NFT holders or NFTs to token holders. \n💷 3. STAKING & GOVERNANCE \n\n",
+            reply_markup = mu,
+            parse_mode = "Markdown")
+
+    except Exception as e:    # 모든 예외의 에러 메시지를 출력할 때는 Exception을 사용
+        print('예외가 발생했습니다.', e)
+
+def spread(update, context):
+#     if msg['text'] == "link":
+    bot = telepot.Bot(TOKEN)
+    btn1 = BT(text = "🍀 Official Website 🍀", url = "https://xd.adobe.com/view/2314682e-3f11-491b-9c1e-1fe804a3e242-7647/", callback_data = "1")
+    btn2 = BT(text = "🍀 Official Announcement Telegram Channel 🍀", url = "https://t.me/official_LUCK_announcement", callback_data = "2")
+    btn3 = BT(text = "🍀 Official Twitter 🍀", url = "https://twitter.com/official_LUCK_", callback_data = "3")
+    btn4 = BT(text = "🍀 Official Reddit 🍀", url = "https://www.reddit.com/user/official_LUCK_", callback_data = "4")
+    mu = MU(inline_keyboard = [[btn1], [btn2], [btn3], [btn4]])
+    chat_id = ['@official_LUCK_community', '@hermes_test_group']
+
+    try:
         # bot.sendPhoto(chat_id='@official_LUCK_community',
         #       photo="https://drive.google.com/file/d/1RW2zC1Z5AwNjDBlLK6R4sevf_iz6ex3n/view?usp=sharing",
         #       caption="*💖 WHY IS $LUCK TO SUCCESS? 💖*\n💌 LUCKY CHAIN LETTERS are very effective in spreading our $LUCK. \n💌 The reward system for ALL CONTRIBUTORS, both recipients and senders \n💌 REFERRAL REWARDS = If someone accesses my link and goes through a simple procedure, the token is rewarded \n\n*💰 $LUCK Token 💰*\n💵 1. REWARD for CONTRIBUTORS \n💶 2. NFT Project : We will create a reward structure to drop tokens to NFT holders or NFTs to token holders. \n💷 3. STAKING & GOVERNANCE \n\n",
         #       reply_markup = mu,
         #       parse_mode = "Markdown")
-        bot.sendVideo(chat_id='@official_LUCK_community',
-              video="https://t.me/official_LUCK_community/198",
-              caption="*💖 WHY IS $LUCK TO SUCCESS? 💖*\n💌 LUCKY CHAIN LETTERS are very effective in spreading our $LUCK. \n💌 The reward system for ALL CONTRIBUTORS, both recipients and senders \n💌 REFERRAL REWARDS = If someone accesses my link and goes through a simple procedure, the token is rewarded \n\n*💰 $LUCK Token 💰*\n💵 1. REWARD for CONTRIBUTORS \n💶 2. NFT Project : We will create a reward structure to drop tokens to NFT holders or NFTs to token holders. \n💷 3. STAKING & GOVERNANCE \n\n",
-              reply_markup = mu,
-              parse_mode = "Markdown")
-        # bot.sendMessage(chat_id = '@official_LUCK_community', text = os.getcwd())
-        # /home/centos/ryujaewan.com-onc9
-        # bot.sendVideo(chat_id='@official_LUCK_community', video= os.getcwd() + "/telegram_bot/telegram/bot/fig/baby_get_luck.mp4")
-        # bot.sendVideo(chat_id='@official_LUCK_community', video= "https://t.me/official_LUCK_community/185")
+        for i in chat_id:
+            bot.sendVideo(chat_id = i,
+                video="https://t.me/official_LUCK_community/198",
+                caption="*💖 WHY IS $LUCK TO SUCCESS? 💖*\n💌 LUCKY CHAIN LETTERS are very effective in spreading our $LUCK. \n💌 The reward system for ALL CONTRIBUTORS, both recipients and senders \n💌 REFERRAL REWARDS = If someone accesses my link and goes through a simple procedure, the token is rewarded \n\n*💰 $LUCK Token 💰*\n💵 1. REWARD for CONTRIBUTORS \n💶 2. NFT Project : We will create a reward structure to drop tokens to NFT holders or NFTs to token holders. \n💷 3. STAKING & GOVERNANCE \n\n",
+                reply_markup = mu,
+                parse_mode = "Markdown")
         
         
     except Exception as e:    # 모든 예외의 에러 메시지를 출력할 때는 Exception을 사용
@@ -445,12 +462,11 @@ def presale(update, context):
     bot = telepot.Bot(TOKEN)
     btn = BT(text = "🍀 PRESALE ANNOUNCEMENT 🍀", url = "https://www.pinksale.finance/#/launchpad\n\n", callback_data = "1")
     mu = MU(inline_keyboard = [[btn]])
-    chat_id = ['@official_LUCK_community', '@hermes_test_group']
-    for i in chat_id:
-        bot.sendMessage(chat_id = i,
-                    text = "*✨ PRESALE ANNOUNCEMENT ✨*\n\n🚨 OFFICIAL LINK FOR PRESALE 🚨\n👉 [Visit LUCK Presale page](https://www.pinksale.finance/#/launchpad)\n\nWe will have the following structure:\n\n*- First Come First Served ( FCFS )*\n\n*- SOFT CAP   : 50 BNB*\n*- HARD CAP  : 100 BNB*\n\n*- MIN BUY     : 0.1 BNB*\n*- MAX BUY    : 2 BNB*\n\n🍀 Part 1 : *WHITELIST ROUND*\n         START TIME : 09:00 AM UTC 25 Jan\n         END TIME    : 09:00 AM UTC 26 Jan\n\n🍀 Part 2 : *PUBLIC ROUND*\n         START TIME : 09:00 AM UTC 26 Jan\n         END TIME    : 09:00 AM UTC 27 Jan\n\n🍀 Part 3 : You will be able to *trade $LUCK on PANCAKESWAP* at 10:00 AM UTC 27 Jan\n\n*🍀 LUCK Token Address (BEP-20)*\n👉(token address)\n\n🚀 *Presale Rate　: 1 BNB* = 30,000,000 *LUCK*\n🚀 *Listing Rate  : 1 BNB* = 25,510,000 *LUCK*\n\n*Unsold Tokens : BURN🔥*\n",
-                    reply_markup = mu,
-                    parse_mode = "Markdown")
+    
+    bot.sendMessage(chat_id = '@official_LUCK_community',
+                text = "*✨ PRESALE ANNOUNCEMENT ✨*\n\n🚨 OFFICIAL LINK FOR PRESALE 🚨\n👉 [Visit LUCK Presale page](https://www.pinksale.finance/#/launchpad)\n\nWe will have the following structure:\n\n*- First Come First Served ( FCFS )*\n\n*- SOFT CAP   : 50 BNB*\n*- HARD CAP  : 100 BNB*\n\n*- MIN BUY     : 0.1 BNB*\n*- MAX BUY    : 2 BNB*\n\n🍀 Part 1 : *WHITELIST ROUND*\n         START TIME : 09:00 AM UTC 25 Jan\n         END TIME    : 09:00 AM UTC 26 Jan\n\n🍀 Part 2 : *PUBLIC ROUND*\n         START TIME : 09:00 AM UTC 26 Jan\n         END TIME    : 09:00 AM UTC 27 Jan\n\n🍀 Part 3 : You will be able to *trade $LUCK on PANCAKESWAP* at 10:00 AM UTC 27 Jan\n\n*🍀 LUCK Token Address (BEP-20)*\n👉(token address)\n\n🚀 *Presale Rate　: 1 BNB* = 30,000,000 *LUCK*\n🚀 *Listing Rate  : 1 BNB* = 25,510,000 *LUCK*\n\n*Unsold Tokens : BURN🔥*\n",
+                reply_markup = mu,
+                parse_mode = "Markdown")
 
 
 def main():
@@ -461,6 +477,7 @@ def main():
     dp = updater.dispatcher
     print("Operating well!")
     dp.add_handler(CommandHandler("shill", social_link))
+    dp.add_handler(CommandHandler("spread", spread))
     dp.add_handler(CommandHandler("rule", rule))
     dp.add_handler(CommandHandler("airdrop", airdrop))
     dp.add_handler(CommandHandler("whitelist", whitelist))
