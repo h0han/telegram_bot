@@ -423,14 +423,21 @@ def spread(update, context):
     #     chat_id.append(line[0])
     # f.close()
 
-    file = os.getcwd() + "/telegram_bot/telegram/bot/spread_test.csv"
+    # file = os.getcwd() + "/telegram_bot/telegram/bot/spread_test.csv"
+    # if os.path.isfile(file):
+    #     bot.sendMessage(chat_id = '@hermes_test_group', text = "Yes, it is a file")
+    # elif os.path.isdir(file):
+    #     bot.sendMessage(chat_id = '@hermes_test_group', text = "Yes, it is a directory")
+    # else:
+    #     bot.sendMessage(chat_id = '@hermes_test_group', text = "Nothing")
 
-    if os.path.isfile(file):
+    file = "spread_test.csv"
+    if os.path.exists(file):
         bot.sendMessage(chat_id = '@hermes_test_group', text = "Yes, it is a file")
-    elif os.path.isdir(file):
-        bot.sendMessage(chat_id = '@hermes_test_group', text = "Yes, it is a directory")
     else:
         bot.sendMessage(chat_id = '@hermes_test_group', text = "Nothing")
+
+
 
     # chat_id = ['@official_LUCK_community', '@hermes_test_group']
 
