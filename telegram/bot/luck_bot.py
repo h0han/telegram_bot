@@ -416,20 +416,19 @@ def spread(update, context):
     btn4 = BT(text = "🍀 Official Reddit 🍀", url = "https://www.reddit.com/user/official_LUCK_", callback_data = "4")
     mu = MU(inline_keyboard = [[btn1], [btn2], [btn3], [btn4]])
 
-    # f = open(os.getcwd() + )
+    chat_id = []
+    f = open(os.getcwd() + "/telegram_bot/telegram/bot/spread_test.csv", 'r', encoding = 'utf-8')
+    rdr = csv.reader(f)
+    for line in rdr:
+        chat_id.append(line[0])
+    f.close()
 
     # chat_id = ['@official_LUCK_community', '@hermes_test_group']
 
     try:
-        # bot.sendPhoto(chat_id='@official_LUCK_community',
-        #       photo="https://drive.google.com/file/d/1RW2zC1Z5AwNjDBlLK6R4sevf_iz6ex3n/view?usp=sharing",
-        #       caption="*💖 WHY IS $LUCK TO SUCCESS? 💖*\n💌 LUCKY CHAIN LETTERS are very effective in spreading our $LUCK. \n💌 The reward system for ALL CONTRIBUTORS, both recipients and senders \n💌 REFERRAL REWARDS = If someone accesses my link and goes through a simple procedure, the token is rewarded \n\n*💰 $LUCK Token 💰*\n💵 1. REWARD for CONTRIBUTORS \n💶 2. NFT Project : We will create a reward structure to drop tokens to NFT holders or NFTs to token holders. \n💷 3. STAKING & GOVERNANCE \n\n",
-        #       reply_markup = mu,
-        #       parse_mode = "Markdown")
-
         bot.sendVideo(chat_id = '@hermes_test_group',
             video="https://t.me/hermes_test_group/125",
-            caption=os.getcwd(),
+            caption=len(chat_id),
             reply_markup = mu,
             parse_mode = "Markdown")
 
