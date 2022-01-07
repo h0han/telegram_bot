@@ -8,6 +8,7 @@ import sys
 # import emoji
 from html import escape
 import os
+import csv
 
 import pickledb
 
@@ -414,7 +415,10 @@ def spread(update, context):
     btn3 = BT(text = "🍀 Official Twitter 🍀", url = "https://twitter.com/official_LUCK_", callback_data = "3")
     btn4 = BT(text = "🍀 Official Reddit 🍀", url = "https://www.reddit.com/user/official_LUCK_", callback_data = "4")
     mu = MU(inline_keyboard = [[btn1], [btn2], [btn3], [btn4]])
-    chat_id = ['@official_LUCK_community', '@hermes_test_group']
+
+    # f = open(os.getcwd() + )
+
+    # chat_id = ['@official_LUCK_community', '@hermes_test_group']
 
     try:
         # bot.sendPhoto(chat_id='@official_LUCK_community',
@@ -422,12 +426,19 @@ def spread(update, context):
         #       caption="*💖 WHY IS $LUCK TO SUCCESS? 💖*\n💌 LUCKY CHAIN LETTERS are very effective in spreading our $LUCK. \n💌 The reward system for ALL CONTRIBUTORS, both recipients and senders \n💌 REFERRAL REWARDS = If someone accesses my link and goes through a simple procedure, the token is rewarded \n\n*💰 $LUCK Token 💰*\n💵 1. REWARD for CONTRIBUTORS \n💶 2. NFT Project : We will create a reward structure to drop tokens to NFT holders or NFTs to token holders. \n💷 3. STAKING & GOVERNANCE \n\n",
         #       reply_markup = mu,
         #       parse_mode = "Markdown")
-        for i in chat_id:
-            bot.sendVideo(chat_id = i,
-                video="https://t.me/hermes_test_group/125",
-                caption="*💖 WHY IS $LUCK TO SUCCESS? 💖*\n💌 LUCKY CHAIN LETTERS are very effective in spreading our $LUCK. \n💌 The reward system for ALL CONTRIBUTORS, both recipients and senders \n💌 REFERRAL REWARDS = If someone accesses my link and goes through a simple procedure, the token is rewarded \n\n*💰 $LUCK Token 💰*\n💵 1. REWARD for CONTRIBUTORS \n💶 2. NFT Project : We will create a reward structure to drop tokens to NFT holders or NFTs to token holders. \n💷 3. STAKING & GOVERNANCE \n\n",
-                reply_markup = mu,
-                parse_mode = "Markdown")
+
+        bot.sendVideo(chat_id = '@hermes_test_group',
+            video="https://t.me/hermes_test_group/125",
+            caption=os.getcwd(),
+            reply_markup = mu,
+            parse_mode = "Markdown")
+
+        # for i in chat_id:
+        #     bot.sendVideo(chat_id = i,
+        #         video="https://t.me/hermes_test_group/125",
+        #         caption="*💖 WHY IS $LUCK TO SUCCESS? 💖*\n💌 LUCKY CHAIN LETTERS are very effective in spreading our $LUCK. \n💌 The reward system for ALL CONTRIBUTORS, both recipients and senders \n💌 REFERRAL REWARDS = If someone accesses my link and goes through a simple procedure, the token is rewarded \n\n*💰 $LUCK Token 💰*\n💵 1. REWARD for CONTRIBUTORS \n💶 2. NFT Project : We will create a reward structure to drop tokens to NFT holders or NFTs to token holders. \n💷 3. STAKING & GOVERNANCE \n\n",
+        #         reply_markup = mu,
+        #         parse_mode = "Markdown")
         
         
     except Exception as e:    # 모든 예외의 에러 메시지를 출력할 때는 Exception을 사용
