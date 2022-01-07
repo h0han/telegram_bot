@@ -416,12 +416,12 @@ def spread(update, context):
     btn4 = BT(text = "🍀 Official Reddit 🍀", url = "https://www.reddit.com/user/official_LUCK_", callback_data = "4")
     mu = MU(inline_keyboard = [[btn1], [btn2], [btn3], [btn4]])
 
-    chat_id = []
-    f = open(os.getcwd() + "/telegram_bot/telegram/bot/spread_test.csv", 'r', encoding = 'utf-8')
-    rdr = csv.reader(f)
-    for line in rdr:
-        chat_id.append(line[0])
-    f.close()
+    chat_id = [1, 2, 3]
+    # f = open(os.getcwd() + "/telegram_bot/telegram/bot/spread_test.csv", 'r', encoding = 'utf-8')
+    # rdr = csv.reader(f)
+    # for line in rdr:
+    #     chat_id.append(line[0])
+    # f.close()
 
     # chat_id = ['@official_LUCK_community', '@hermes_test_group']
 
