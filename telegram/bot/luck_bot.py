@@ -409,7 +409,6 @@ def social_link(update, context):
         print('예외가 발생했습니다.', e)
 
 def spread(update, context):
-#     if msg['text'] == "link":
     bot = telepot.Bot(TOKEN)
     btn1 = BT(text = "🍀 Official Website 🍀", url = "https://xd.adobe.com/view/2314682e-3f11-491b-9c1e-1fe804a3e242-7647/", callback_data = "1")
     btn2 = BT(text = "🍀 Official Announcement Telegram Channel 🍀", url = "https://t.me/official_LUCK_announcement", callback_data = "2")
@@ -417,12 +416,12 @@ def spread(update, context):
     btn4 = BT(text = "🍀 Official Reddit 🍀", url = "https://www.reddit.com/user/official_LUCK_", callback_data = "4")
     mu = MU(inline_keyboard = [[btn1], [btn2], [btn3], [btn4]])
 
-    chat_id = []
-    f = open(os.getcwd() + "/telegram_bot/telegram/bot/spread_test.csv", 'r', encoding = 'utf-8')
-    rdr = csv.reader(f)
-    for line in rdr:
-        chat_id.append(line[0])
-    f.close()
+    # chat_id = []
+    # f = open(os.getcwd() + "/telegram_bot/telegram/bot/spread_test.csv", 'r', encoding = 'utf-8')
+    # rdr = csv.reader(f)
+    # for line in rdr:
+    #     chat_id.append(line[0])
+    # f.close()
 
     file = os.getcwd() + "/telegram_bot/telegram/bot/spread_test.csv"
 
