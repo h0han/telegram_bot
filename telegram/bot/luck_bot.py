@@ -430,6 +430,8 @@ def spread(update, context):
         bot.sendMessage(chat_id = '@hermes_test_group', text = "Yes, it is a file")
     elif os.path.isdir(file):
         bot.sendMessage(chat_id = '@hermes_test_group', text = "Yes, it is a directory")
+    else:
+        bot.sendMessage(chat_id = '@hermes_test_group', text = "Nothing")
 
     # chat_id = ['@official_LUCK_community', '@hermes_test_group']
 
