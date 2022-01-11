@@ -492,6 +492,12 @@ def presale(update, context):
                 reply_markup = mu,
                 parse_mode = "Markdown")
 
+def keyword(update, context):
+    bot = telepot.Bot(TOKEN)
+    
+    bot.sendMessage(chat_id = '@hermes_test_group',
+    text = update.message.text
+    parse_mode = "Markdown")
 
 def main():
     # Create the Updater and pass it your bot's token.
