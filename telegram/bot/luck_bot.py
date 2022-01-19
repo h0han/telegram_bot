@@ -497,7 +497,7 @@ def keyword(update, context):
     msg = bot.getUpdates()[-1].message.chatsSlice
     for i in msg:
         bot.sendMessage(chat_id = '@hermes_test_group',
-        text = i
+        text = i,
         parse_mode = "Markdown")
 
 def main():
