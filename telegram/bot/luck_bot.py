@@ -500,6 +500,13 @@ def keyword(update, context):
         text = i,
         parse_mode = "Markdown")
 
+def sir(update, context):
+    bot = telepot.Bot(TOKEN)
+
+    bot.sendMessage(chat_id = '@hermes_test_group',
+                text = "If you have a marketing proposal to present to Project LUCK, DM @clever. *Clever* will kindly inform you of the marketing method using Chain Letter Protocol.",
+                parse_mode = "Markdown")
+
 def main():
     # Create the Updater and pass it your bot's token.
     updater = Updater(TOKEN, workers=10, use_context=True)
@@ -514,6 +521,10 @@ def main():
     dp.add_handler(CommandHandler("whitelist", whitelist))
     dp.add_handler(CommandHandler("presale", presale))
     dp.add_handler(CommandHandler("keyword", keyword))
+    dp.add_handler(CommandHandler("sir", sir))
+    dp.add_handler(CommandHandler("marketing", sir))
+    dp.add_handler(CommandHandler("proposal", sir))
+
     
 #     dp.add_handler(CommandHandler("start", help))
 #     dp.add_handler(CommandHandler("help", help))
