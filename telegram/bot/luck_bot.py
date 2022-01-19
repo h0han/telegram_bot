@@ -521,8 +521,8 @@ def main():
     dp.add_handler(CommandHandler("whitelist", whitelist))
     dp.add_handler(CommandHandler("presale", presale))
     dp.add_handler(CommandHandler("keyword", keyword))
-    dp.add_handler(CommandHandler("sir", sir))
-    dp.add_handler(CommandHandler("marketing", sir))
+    # dp.add_handler(CommandHandler("sir", sir))
+    # dp.add_handler(CommandHandler("marketing", sir))
     dp.add_handler(CommandHandler("proposal", sir))
 #     dp.add_handler(CommandHandler("start", help))
 #     dp.add_handler(CommandHandler("help", help))
@@ -538,7 +538,7 @@ def main():
 
     dp.add_error_handler(error)
 
-    # updater.start_polling(timeout=30, clean=True)
+    updater.start_polling(timeout=30, clean=True)
     updater.idle()
 
 
