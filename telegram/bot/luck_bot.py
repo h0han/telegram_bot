@@ -390,7 +390,6 @@ def error(update, context, **kwargs):
         pass
 
 def social_link(update, context):
-#     if msg['text'] == "link":
     bot = telepot.Bot(TOKEN)
     btn1 = BT(text = "🍀 Official Website 🍀", url = "https://xd.adobe.com/view/2314682e-3f11-491b-9c1e-1fe804a3e242-7647/", callback_data = "1")
     btn2 = BT(text = "🍀 Official Announcement Telegram Channel 🍀", url = "https://t.me/official_LUCK_announcement", callback_data = "2")
@@ -520,7 +519,7 @@ def main():
     # dp.add_handler(CommandHandler("welcome", set_welcome))
 #     dp.add_handler(CommandHandler("goodbye", set_goodbye))
 #     dp.add_handler(CommandHandler("disable_goodbye", disable_goodbye))
-#     dp.add_handler(CommandHandler("lock", lock))s
+#     dp.add_handler(CommandHandler("lock", lock))
 #     dp.add_handler(CommandHandler("unlock", unlock))
 #     dp.add_handler(CommandHandler("quiet", quiet))
 #     dp.add_handler(CommandHandler("unquiet", unquiet))
