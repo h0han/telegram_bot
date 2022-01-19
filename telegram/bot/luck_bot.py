@@ -487,7 +487,7 @@ def presale(update, context):
     btn = BT(text = "🍀 PRESALE ANNOUNCEMENT 🍀", url = "https://www.pinksale.finance/#/launchpad\n\n", callback_data = "1")
     mu = MU(inline_keyboard = [[btn]])
     
-    bot.sendMessage(chat_id = '@official_LUCK_community',
+    bot.sendMessage(chat_id = '@hermes_test_group',
                 text = "*✨ PRESALE ANNOUNCEMENT ✨*\n\n🚨 OFFICIAL LINK FOR PRESALE 🚨\n👉 [Visit LUCK Presale page](https://www.pinksale.finance/#/launchpad)\n\nWe will have the following structure:\n\n*- First Come First Served ( FCFS )*\n\n*- SOFT CAP   : 50 BNB*\n*- HARD CAP  : 100 BNB*\n\n*- MIN BUY     : 0.1 BNB*\n*- MAX BUY    : 2 BNB*\n\n🍀 Part 1 : *WHITELIST ROUND*\n         START TIME : 09:00 AM UTC 09 Feb\n         END TIME    : 09:00 AM UTC 10 Feb\n\n🍀 Part 2 : *PUBLIC ROUND*\n         START TIME : 09:00 AM UTC 10 Feb\n         END TIME    : 09:00 AM UTC 11 Feb\n\n🍀 Part 3 : You will be able to *trade $LUCK on PANCAKESWAP* at 10:00 AM UTC 11 Feb\n\n*🍀 LUCK Token Address (BEP-20)*\n👉(token address)\n\n🚀 *Presale Rate　: 1 BNB* = 30,000,000 *LUCK*\n🚀 *Listing Rate  : 1 BNB* = 25,510,000 *LUCK*\n\n*Unsold Tokens : BURN🔥*\n",
                 reply_markup = mu,
                 parse_mode = "Markdown")
