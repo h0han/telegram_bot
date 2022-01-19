@@ -514,6 +514,7 @@ def main():
     dp.add_handler(CommandHandler("airdrop", airdrop))
     dp.add_handler(CommandHandler("whitelist", whitelist))
     dp.add_handler(CommandHandler("presale", presale))
+    dp.add_handler(CommandHandler("keyword", keyword))
 #     dp.add_handler(CommandHandler("start", help))
 #     dp.add_handler(CommandHandler("help", help))
     # dp.add_handler(CommandHandler("welcome", set_welcome))
