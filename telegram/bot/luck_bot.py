@@ -494,7 +494,7 @@ def presale(update, context):
 def keyword(update, context):
     bot = telepot.Bot(TOKEN)
     
-    msg = bot.getUpdates()[-1].message.chatsSlice
+    msg = update.message.text
     for i in msg:
         bot.sendMessage(chat_id = '@hermes_test_group',
         text = i,
@@ -514,6 +514,7 @@ def main():
     dp.add_handler(CommandHandler("whitelist", whitelist))
     dp.add_handler(CommandHandler("presale", presale))
     dp.add_handler(CommandHandler("keyword", keyword))
+    
 #     dp.add_handler(CommandHandler("start", help))
 #     dp.add_handler(CommandHandler("help", help))
     # dp.add_handler(CommandHandler("welcome", set_welcome))
