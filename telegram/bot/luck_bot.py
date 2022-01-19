@@ -524,8 +524,6 @@ def main():
     dp.add_handler(CommandHandler("sir", sir))
     dp.add_handler(CommandHandler("marketing", sir))
     dp.add_handler(CommandHandler("proposal", sir))
-
-    
 #     dp.add_handler(CommandHandler("start", help))
 #     dp.add_handler(CommandHandler("help", help))
     # dp.add_handler(CommandHandler("welcome", set_welcome))
