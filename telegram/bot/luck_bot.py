@@ -399,7 +399,7 @@ def social_link(update, context):
 
     try:
         bot.sendVideo(chat_id = '@official_LUCK_community',
-            video="https://t.me/official_LUCK_community/254",
+            video="https://t.me/official_LUCK_community/282",
             caption="*💖 WHY IS $LUCK TO SUCCESS? 💖*\n💌 LUCKY CHAIN LETTERS are very effective in spreading our $LUCK. \n💌 The reward system for ALL CONTRIBUTORS, both recipients and senders \n💌 REFERRAL REWARDS = If someone accesses my link and goes through a simple procedure, the token is rewarded \n\n*💰 $LUCK Token 💰*\n💵 1. REWARD for CONTRIBUTORS \n💶 2. NFT Project : We will create a reward structure to drop tokens to NFT holders or NFTs to token holders. \n💷 3. STAKING & GOVERNANCE \n\n",
             reply_markup = mu,
             parse_mode = "Markdown")
@@ -500,8 +500,11 @@ def presale(update, context):
 
 def marketing(update, context):
     bot = telepot.Bot(TOKEN)
+    btn = BT(text = "🍀 Visit LUCK AIRDROP page 🍀", url = "https://t.me/LUCK_clever", callback_data = "1")
+    mu = MU(inline_keyboard = [[btn]])
     bot.sendMessage(chat_id = '@official_LUCK_community',
                    text = "If you have a marketing proposal to present to Project LUCK, DM @LUCK_clever. *Clever* will kindly inform you of the marketing method using Chain Letter Protocol.",
+                   reply_markup = mu,
                    parse_mode = "Markdown")
 
 def main():
