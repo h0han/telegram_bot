@@ -498,7 +498,7 @@ def presale(update, context):
 #         text = i,
 #         parse_mode = "Markdown")
 
-def sir(update, context):
+def marketing(update, context):
     bot = telepot.Bot(TOKEN)
     bot.sendMessage(chat_id = '@official_LUCK_community',
                    text = "If you have a marketing proposal to present to Project LUCK, DM @LUCK_clever. *Clever* will kindly inform you of the marketing method using Chain Letter Protocol.",
@@ -518,7 +518,7 @@ def main():
     dp.add_handler(CommandHandler("whitelist", whitelist))
     dp.add_handler(CommandHandler("presale", presale))
     # dp.add_handler(CommandHandler("keyword", keyword))
-    dp.add_handler(CommandHandler("sir", sir))
+    dp.add_handler(CommandHandler("marketing", marketing))
     # dp.add_handler(CommandHandler("marketing", sir))
     # dp.add_handler(CommandHandler("proposal", sir))
 #     dp.add_handler(CommandHandler("start", help))
