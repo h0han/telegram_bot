@@ -500,7 +500,7 @@ def presale(update, context):
 
 def marketing(update, context):
     bot = telepot.Bot(TOKEN)
-    btn = BT(text = "🍀 Visit LUCK AIRDROP page 🍀", url = "https://t.me/LUCK_clever", callback_data = "1")
+    btn = BT(text = "🍀 Send marketing proposal to cleaver 🍀", url = "https://t.me/LUCK_clever", callback_data = "1")
     mu = MU(inline_keyboard = [[btn]])
     bot.sendMessage(chat_id = '@official_LUCK_community',
                    text = "If you have a marketing proposal to present to Project LUCK, DM @LUCK_clever. *Clever* will kindly inform you of the marketing method using Chain Letter Protocol.",
