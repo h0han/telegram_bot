@@ -485,7 +485,6 @@ def presale(update, context):
     bot = telepot.Bot(TOKEN)
     btn = BT(text = "🍀 PRESALE ANNOUNCEMENT 🍀", url = "https://www.pinksale.finance/#/launchpad\n\n", callback_data = "1")
     mu = MU(inline_keyboard = [[btn]])
-    
     bot.sendMessage(chat_id = '@official_LUCK_community',
                 text = "*✨ PRESALE ANNOUNCEMENT ✨*\n\n🚨 OFFICIAL LINK FOR PRESALE 🚨\n👉 [Visit LUCK Presale page](https://www.pinksale.finance/#/launchpad)\n\nWe will have the following structure:\n\n*- First Come First Served ( FCFS )*\n\n*- SOFT CAP   : 50 BNB*\n*- HARD CAP  : 100 BNB*\n\n*- MIN BUY     : 0.1 BNB*\n*- MAX BUY    : 2 BNB*\n\n🍀 Part 1 : *WHITELIST ROUND*\n         START TIME : 09:00 AM UTC 09 Feb\n         END TIME    : 09:00 AM UTC 10 Feb\n\n🍀 Part 2 : *PUBLIC ROUND*\n         START TIME : 09:00 AM UTC 10 Feb\n         END TIME    : 09:00 AM UTC 11 Feb\n\n🍀 Part 3 : You will be able to *trade $LUCK on PANCAKESWAP* at 10:00 AM UTC 11 Feb\n\n*🍀 LUCK Token Address (BEP-20)*\n👉(token address)\n\n🚀 *Presale Rate　: 1 BNB* = 30,000,000 *LUCK*\n🚀 *Listing Rate  : 1 BNB* = 25,510,000 *LUCK*\n\n*Unsold Tokens : BURN🔥*\n",
                 reply_markup = mu,
@@ -493,7 +492,6 @@ def presale(update, context):
 
 def keyword(update, context):
     bot = telepot.Bot(TOKEN)
-    
     msg = update.message.text
     for i in msg:
         bot.sendMessage(chat_id = '@hermes_test_group',
@@ -503,8 +501,8 @@ def keyword(update, context):
 def sir(update, context):
     bot = telepot.Bot(TOKEN)
     bot.sendMessage(chat_id = '@official_LUCK_community',
-                text = "If you have a marketing proposal to present to Project LUCK, DM @LUCK_clever. *Clever* will kindly inform you of the marketing method using Chain Letter Protocol.",
-                parse_mode = "Markdown")
+                   text = "If you have a marketing proposal to present to Project LUCK, DM @LUCK_clever. *Clever* will kindly inform you of the marketing method using Chain Letter Protocol.",
+                   parse_mode = "Markdown")
 
 def main():
     # Create the Updater and pass it your bot's token.
@@ -520,8 +518,8 @@ def main():
     dp.add_handler(CommandHandler("whitelist", whitelist))
     dp.add_handler(CommandHandler("presale", presale))
     dp.add_handler(CommandHandler("keyword", keyword))
-    # dp.add_handler(CommandHandler("sir", sir))
-    dp.add_handler(CommandHandler("marketing", sir))
+    dp.add_handler(CommandHandler("sir", sir))
+    # dp.add_handler(CommandHandler("marketing", sir))
     # dp.add_handler(CommandHandler("proposal", sir))
 #     dp.add_handler(CommandHandler("start", help))
 #     dp.add_handler(CommandHandler("help", help))
