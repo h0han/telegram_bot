@@ -501,7 +501,7 @@ def presale(update, context):
 def sir(update, context):
     bot = telepot.Bot(TOKEN)
     bot.sendMessage(chat_id = '@official_LUCK_community',
-                   text = "If you have a marketing proposal to present to Project LUCK, DM LUCK_clever. *Clever* will kindly inform you of the marketing method using Chain Letter Protocol.",
+                   text = "If you have a marketing proposal to present to Project LUCK, DM @LUCK_clever. *Clever* will kindly inform you of the marketing method using Chain Letter Protocol.",
                    parse_mode = "Markdown")
 
 def main():
