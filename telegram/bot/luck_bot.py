@@ -490,13 +490,13 @@ def presale(update, context):
                 reply_markup = mu,
                 parse_mode = "Markdown")
 
-def keyword(update, context):
-    bot = telepot.Bot(TOKEN)
-    msg = update.message.text
-    for i in msg:
-        bot.sendMessage(chat_id = '@hermes_test_group',
-        text = i,
-        parse_mode = "Markdown")
+# def keyword(update, context):
+#     bot = telepot.Bot(TOKEN)
+#     msg = update.message.text
+#     for i in msg:
+#         bot.sendMessage(chat_id = '@hermes_test_group',
+#         text = i,
+#         parse_mode = "Markdown")
 
 def sir(update, context):
     bot = telepot.Bot(TOKEN)
@@ -517,7 +517,7 @@ def main():
     dp.add_handler(CommandHandler("airdrop", airdrop))
     dp.add_handler(CommandHandler("whitelist", whitelist))
     dp.add_handler(CommandHandler("presale", presale))
-    dp.add_handler(CommandHandler("keyword", keyword))
+    # dp.add_handler(CommandHandler("keyword", keyword))
     dp.add_handler(CommandHandler("sir", sir))
     # dp.add_handler(CommandHandler("marketing", sir))
     # dp.add_handler(CommandHandler("proposal", sir))
