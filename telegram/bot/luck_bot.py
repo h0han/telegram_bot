@@ -400,7 +400,7 @@ def social_link(update, context):
     try:
         bot.sendVideo(chat_id = '@official_LUCK_community',
             video="https://t.me/official_LUCK_community/282",
-            caption="*💖 WHY IS $LUCK TO SUCCESS? 💖*\n💌 LUCKY CHAIN LETTERS are very effective in spreading our $LUCK. \n💌 The reward system for ALL CONTRIBUTORS, both recipients and senders \n💌 REFERRAL REWARDS = If someone accesses my link and goes through a simple procedure, the token is rewarded \n\n*💰 $LUCK Token 💰*\n💵 1. REWARD for CONTRIBUTORS \n💶 2. NFT Project : We will create a reward structure to drop tokens to NFT holders or NFTs to token holders. \n💷 3. STAKING & GOVERNANCE \n\n",
+            caption="*💖 WHY IS $LUCK TO SUCCESS? 💖*\n💌 Chain Letter Protocol(CLP) is the most powerful marketing protocol covering crypto & real world \n💌 The amazing reward system for ALL CONTRIBUTORS, sender, receiver, and staker \n💌 REFERRAL REWARDS : 💵Sender💵 🔗 💌Lucky Chain Letter💌 🔗 💶Receiver💶 \n\n*💰 $LUCK Token 💰*\n💵 1. REWARD for CONTRIBUTORS : Standard Referral Reward & Bonus Referral Reward \n💶 2. STAKING : Apply a high level of consistent APY \n💷 3. BUYBACK : $LUCK continues to increase in value through Buyback\n💴 4. TIER System : The more lucky chain letters you spread, the higher the tier you are assigned, which leads to higher rewards\n\n",
             reply_markup = mu,
             parse_mode = "Markdown")
 
