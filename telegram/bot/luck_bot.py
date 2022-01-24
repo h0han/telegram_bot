@@ -417,7 +417,7 @@ def social_link(update, context):
 
     try:
         bot.sendMessage(chat_id = '@official_LUCK_community',
-            text = "*💖 WHY IS $LUCK TO SUCCESS? 💖*\n🎁 Chain Letter Protocol(CLP) is the most powerful marketing protocol covering crypto & real world \n🎁 The amazing reward system for ALL CONTRIBUTORS, sender, receiver, and staker \n🎁 REFERRAL REWARDS : 💵Sender💵 🔗 💌Lucky Chain Letter💌 🔗 💶Receiver💶 \n\n*💰 $LUCK Token 💰*\n💵 1. REWARD for CONTRIBUTORS : Pledge referral and mission rewards to senders and receivers, Various benefits \n💶 2. STAKING : Apply a high level of consistent APY \n💷 3. BUYBACK : $LUCK continues to increase in value through Buyback\n💴 4. TIER System : The more lucky chain letters you spread, the higher the tier you are assigned, which leads to higher rewards\n\n",
+            text = "*💖 WHY IS $LUCK TO SUCCESS? 💖*\n🎁 Chain Letter Protocol(CLP) is the most powerful marketing protocol covering crypto & real world \n🎁 The amazing reward system for ALL CONTRIBUTORS\n🎁 REFERRAL REWARDS :\n💵Sender💵 🔗 💌Lucky Chain Letter💌 🔗 💶Receiver💶 \n\n*💰 $LUCK Token 💰*\n💵 1. REWARD for CONTRIBUTORS : Pledge referral and mission rewards to senders and receivers, Various benefits \n💶 2. STAKING : Apply a high level of consistent APY \n💷 3. BUYBACK : $LUCK continues to increase in value through Buyback\n💴 4. TIER System : The more lucky chain letters you spread, the higher the tier you are assigned, which leads to higher rewards\n\n",
             reply_markup = mu,
             parse_mode = "Markdown")
 
