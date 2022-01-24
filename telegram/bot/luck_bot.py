@@ -389,6 +389,24 @@ def error(update, context, **kwargs):
     except:
         pass
 
+# def social_link(update, context):
+#     bot = telepot.Bot(TOKEN)
+#     btn1 = BT(text = "🍀 Official Website 🍀", url = "https://xd.adobe.com/view/2314682e-3f11-491b-9c1e-1fe804a3e242-7647/", callback_data = "1")
+#     btn2 = BT(text = "🍀 Official Announcement Telegram Channel 🍀", url = "https://t.me/official_LUCK_announcement", callback_data = "2")
+#     btn3 = BT(text = "🍀 Official Twitter 🍀", url = "https://twitter.com/official_LUCK_", callback_data = "3")
+#     btn4 = BT(text = "🍀 Official Reddit 🍀", url = "https://www.reddit.com/user/official_LUCK_", callback_data = "4")
+#     mu = MU(inline_keyboard = [[btn1], [btn2], [btn3], [btn4]])
+
+#     try:
+#         bot.sendVideo(chat_id = '@official_LUCK_community',
+#             video="https://t.me/official_LUCK_community/282",
+#             caption="*💖 WHY IS $LUCK TO SUCCESS? 💖*\n🎁 Chain Letter Protocol(CLP) is the most powerful marketing protocol covering crypto & real world \n🎁 The amazing reward system for ALL CONTRIBUTORS, sender, receiver, and staker \n🎁 REFERRAL REWARDS : 💵Sender💵 🔗 💌Lucky Chain Letter💌 🔗 💶Receiver💶 \n\n*💰 $LUCK Token 💰*\n💵 1. REWARD for CONTRIBUTORS : Pledge referral and mission rewards to senders and receivers, Various benefits \n💶 2. STAKING : Apply a high level of consistent APY \n💷 3. BUYBACK : $LUCK continues to increase in value through Buyback\n💴 4. TIER System : The more lucky chain letters you spread, the higher the tier you are assigned, which leads to higher rewards\n\n",
+#             reply_markup = mu,
+#             parse_mode = "Markdown")
+
+#     except Exception as e:    # 모든 예외의 에러 메시지를 출력할 때는 Exception을 사용
+#         print('예외가 발생했습니다.', e)
+
 def social_link(update, context):
     bot = telepot.Bot(TOKEN)
     btn1 = BT(text = "🍀 Official Website 🍀", url = "https://xd.adobe.com/view/2314682e-3f11-491b-9c1e-1fe804a3e242-7647/", callback_data = "1")
@@ -398,9 +416,8 @@ def social_link(update, context):
     mu = MU(inline_keyboard = [[btn1], [btn2], [btn3], [btn4]])
 
     try:
-        bot.sendVideo(chat_id = '@official_LUCK_community',
-            video="https://t.me/official_LUCK_community/282",
-            caption="*💖 WHY IS $LUCK TO SUCCESS? 💖*\n💌 Chain Letter Protocol(CLP) is the most powerful marketing protocol covering crypto & real world \n💌 The amazing reward system for ALL CONTRIBUTORS, sender, receiver, and staker \n💌 REFERRAL REWARDS : 💵Sender💵 🔗 💌Lucky Chain Letter💌 🔗 💶Receiver💶 \n\n*💰 $LUCK Token 💰*\n💵 1. REWARD for CONTRIBUTORS : Standard Referral Reward & Bonus Referral Reward \n💶 2. STAKING : Apply a high level of consistent APY \n💷 3. BUYBACK : $LUCK continues to increase in value through Buyback\n💴 4. TIER System : The more lucky chain letters you spread, the higher the tier you are assigned, which leads to higher rewards\n\n",
+        bot.sendMessage(chat_id = '@official_LUCK_community',
+            text = "*💖 WHY IS $LUCK TO SUCCESS? 💖*\n🎁 Chain Letter Protocol(CLP) is the most powerful marketing protocol covering crypto & real world \n🎁 The amazing reward system for ALL CONTRIBUTORS, sender, receiver, and staker \n🎁 REFERRAL REWARDS : 💵Sender💵 🔗 💌Lucky Chain Letter💌 🔗 💶Receiver💶 \n\n*💰 $LUCK Token 💰*\n💵 1. REWARD for CONTRIBUTORS : Pledge referral and mission rewards to senders and receivers, Various benefits \n💶 2. STAKING : Apply a high level of consistent APY \n💷 3. BUYBACK : $LUCK continues to increase in value through Buyback\n💴 4. TIER System : The more lucky chain letters you spread, the higher the tier you are assigned, which leads to higher rewards\n\n",
             reply_markup = mu,
             parse_mode = "Markdown")
 
