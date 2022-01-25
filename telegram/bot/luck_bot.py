@@ -508,24 +508,24 @@ def presale(update, context):
                 reply_markup = mu,
                 parse_mode = "Markdown")
 
-# def a(update, context):
-#     bot = telepot.Bot(TOKEN)
-#     btn = BT(text = "🍀 Send marketing proposal to cleaver 🍀", url = "https://t.me/LUCK_clever", callback_data = "1")
-#     mu = MU(inline_keyboard = [[btn]])
-#     bot.sendMessage(chat_id = '@official_LUCK_community',
-#                    text = "If you have a marketing proposal to present to Project LUCK, DM LUCK_clever. *Clever* will kindly inform you of the marketing method using Chain Letter Protocol.",
-#                    reply_markup = mu,
-#                    parse_mode = "Markdown")
-
-def foo(update, context):
+def marketing(update, context):
     bot = telepot.Bot(TOKEN)
-    btn = BT(text = "🍀 Visit LUCK WHITELIST page 🍀", url = "", callback_data = "1")
+    btn = BT(text = "🍀 Send marketing proposal to cleaver 🍀", url = "https://t.me/LUCK_clever", callback_data = "1")
     mu = MU(inline_keyboard = [[btn]])
-    bot.sendVideo(chat_id = '@official_LUCK_community',
-        video="https://t.me/official_LUCK_community/282",
-        caption="If you have a marketing proposal to present to Project LUCK, DM @luck_clever",
-        reply_markup = mu,
-        parse_mode = "Markdown")
+    bot.sendMessage(chat_id = '@official_LUCK_community',
+                   text = "If you have a marketing proposal to present to Project LUCK, DM @luckclever",
+                   reply_markup = mu,
+                   parse_mode = "Markdown")
+
+# def foo(update, context):
+#     bot = telepot.Bot(TOKEN)
+#     btn = BT(text = "🍀 Visit LUCK WHITELIST page 🍀", url = "", callback_data = "1")
+#     mu = MU(inline_keyboard = [[btn]])
+#     bot.sendVideo(chat_id = '@official_LUCK_community',
+#         video="https://t.me/official_LUCK_community/282",
+#         caption="If you have a marketing proposal to present to Project LUCK, DM @luckclever. *Clever* will kindly inform you of the marketing method using Chain Letter Protocol.",
+#         reply_markup = mu,
+#         parse_mode = "Markdown")
 
 def main():
     # Create the Updater and pass it your bot's token.
@@ -540,7 +540,7 @@ def main():
     dp.add_handler(CommandHandler("airdrop", airdrop))
     dp.add_handler(CommandHandler("whitelist", whitelist))
     dp.add_handler(CommandHandler("presale", presale))
-    dp.add_handler(CommandHandler("aaa", foo))
+    dp.add_handler(CommandHandler("marketing", marketing))
     # dp.add_handler(CommandHandler("keyword", keyword))
     # dp.add_handler(CommandHandler("marketing", sir))
     # dp.add_handler(CommandHandler("proposal", sir))
