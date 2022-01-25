@@ -522,7 +522,7 @@ def foo(update, context):
     btn = BT(text = "🍀 Visit LUCK WHITELIST page 🍀", url = "", callback_data = "1")
     mu = MU(inline_keyboard = [[btn]])
     bot.sendMessage(chat_id = '@official_LUCK_community',
-                   text = "If you have a marketing proposal to present to Project LUCK, DM LUCK_clever. *Clever* will kindly inform you of the marketing method using Chain Letter Protocol.\nIf you have a marketing proposal to present to Project LUCK, DM LUCK_clever. *Clever* will kindly inform you of the marketing method using Chain Letter Protocol.\nIf you have a marketing proposal to present to Project LUCK, DM LUCK_clever. *Clever* will kindly inform you of the marketing method using Chain Letter Protocol.",
+                   text = "If you have a marketing proposal to present to Project LUCK, DM LUCK_clever. *Clever* will kindly inform you of the marketing method using Chain Letter Protocol.\n\nIf you have a marketing proposal to present to Project LUCK, DM LUCK_clever. *Clever* will kindly inform you of the marketing method using Chain Letter Protocol.\nIf you have a marketing proposal to present to Project LUCK, DM LUCK_clever. *Clever* will kindly inform you of the marketing method using Chain Letter Protocol.\n",
                    reply_markup = mu,
                    parse_mode = "Markdown")
 
