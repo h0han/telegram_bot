@@ -537,7 +537,7 @@ def main():
     dp.add_handler(CommandHandler("airdrop", airdrop))
     dp.add_handler(CommandHandler("whitelist", whitelist))
     dp.add_handler(CommandHandler("presale", presale))
-    dp.add_handler(CommandHandler("a", a))
+    dp.add_handler(CommandHandler("a", whitelist))
     # dp.add_handler(CommandHandler("keyword", keyword))
     # dp.add_handler(CommandHandler("marketing", sir))
     # dp.add_handler(CommandHandler("proposal", sir))
