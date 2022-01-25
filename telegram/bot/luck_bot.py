@@ -507,20 +507,12 @@ def presale(update, context):
                 reply_markup = mu,
                 parse_mode = "Markdown")
 
-# def keyword(update, context):
-#     bot = telepot.Bot(TOKEN)
-#     msg = update.message.text
-#     for i in msg:
-#         bot.sendMessage(chat_id = '@hermes_test_group',
-#         text = i,
-#         parse_mode = "Markdown")
-
 def marketing(update, context):
     bot = telepot.Bot(TOKEN)
     btn = BT(text = "🍀 Send marketing proposal to cleaver 🍀", url = "https://t.me/LUCK_clever", callback_data = "1")
     mu = MU(inline_keyboard = [[btn]])
     bot.sendMessage(chat_id = '@official_LUCK_community',
-                   text = "If you have a marketing proposal to present to Project LUCK, DM @LUCK_clever. *Clever* will kindly inform you of the marketing method using Chain Letter Protocol.",
+                   text = "If you have a marketing proposal to present to Project LUCK, DM LUCK_clever. *Clever* will kindly inform you of the marketing method using Chain Letter Protocol.",
                    reply_markup = mu,
                    parse_mode = "Markdown")
 
