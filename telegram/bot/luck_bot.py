@@ -507,7 +507,7 @@ def presale(update, context):
                 reply_markup = mu,
                 parse_mode = "Markdown")
 
-def marketing(update, context):
+def a(update, context):
     bot = telepot.Bot(TOKEN)
     btn = BT(text = "🍀 Send marketing proposal to cleaver 🍀", url = "https://t.me/LUCK_clever", callback_data = "1")
     mu = MU(inline_keyboard = [[btn]])
@@ -529,7 +529,7 @@ def main():
     dp.add_handler(CommandHandler("airdrop", airdrop))
     dp.add_handler(CommandHandler("whitelist", whitelist))
     dp.add_handler(CommandHandler("presale", presale))
-    dp.add_handler(CommandHandler("marketing", marketing))
+    dp.add_handler(CommandHandler("a", a))
     # dp.add_handler(CommandHandler("keyword", keyword))
     # dp.add_handler(CommandHandler("marketing", sir))
     # dp.add_handler(CommandHandler("proposal", sir))
