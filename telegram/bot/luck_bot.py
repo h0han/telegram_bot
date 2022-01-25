@@ -523,7 +523,7 @@ def foo(update, context):
     mu = MU(inline_keyboard = [[btn]])
     bot.sendVideo(chat_id = '@official_LUCK_community',
         video="https://t.me/official_LUCK_community/282",
-        caption="If you have a marketing proposal to present to Project LUCK, DM @luckclever",
+        caption="If you have a marketing proposal to present to Project LUCK, DM @luck_clever",
         reply_markup = mu,
         parse_mode = "Markdown")
 
