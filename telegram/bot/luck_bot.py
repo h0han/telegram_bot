@@ -523,7 +523,7 @@ def foo(update, context):
     mu = MU(inline_keyboard = [[btn]])
     bot.sendVideo(chat_id = '@official_LUCK_community',
         video="https://t.me/official_LUCK_community/282",
-        caption="*💖 WHY IS $LUCK TO SUCCESS? 💖*\n🎁 Chain Letter Protocol(CLP) is the most powerful marketing protocol covering crypto & real world \n🎁 The amazing reward system for ALL CONTRIBUTORS, sender, receiver, and staker \n🎁 REFERRAL REWARDS : 💵Sender💵 🔗 💌Lucky Chain Letter💌 🔗 💶Receiver💶 \n\n*💰 $LUCK Token 💰*\n💵 1. REWARD for CONTRIBUTORS : Pledge referral and mission rewards to senders and receivers, Various benefits \n💶 2. STAKING : Apply a high level of consistent APY \n💷 3. BUYBACK : $LUCK continues to increase in value through Buyback\n💴 4. TIER System : The more lucky chain letters you spread, the higher the tier you are assigned, which leads to higher rewards\n\n",
+        caption="If you have a marketing proposal to present to Project LUCK, DM LUCK_clever. *Clever* will kindly inform you of the marketing method using Chain Letter Protocol.",
         reply_markup = mu,
         parse_mode = "Markdown")
 
