@@ -525,19 +525,10 @@ def luck(update, context):
     btn4 = BT(text = "🍀 Official Reddit 🍀", url = "https://www.reddit.com/user/official_LUCK_", callback_data = "4")
     mu = MU(inline_keyboard = [[btn1], [btn2], [btn3], [btn4]])
     bot.sendMessage(chat_id = '@official_LUCK_community',
-                   text = "🎰 What is $LUCK? 🎰\n\n$LUCK is Referral Marketing Platform, inspired by network marketing.\n👨‍👩‍👧‍👦 For users of platform, we guarantee referral rewards.\n🏢 For advertisers, we provide pool of referral marketers and various marketing tools.\n\n🚀 How does $LUCK work? 🚀\n\n 1️⃣ Advertisers offer referral events and deposit rewards to our pool.\n2️⃣ Platform users do referral marketing for the Advertisers.\n3️⃣ Users get massive referral rewards from our pool.\n4️⃣ Users will get more rewards when their friends do marketing.\n5️⃣ Advertisers get marketed by platform users.\n\n$LUCK aim to create synergy by connecting marketers and advertisers.\n🍀 Join LUCK, Grow together. $LUCK will make your wallet LUCKY 🍀",
+                   text = "*🎰 What is $LUCK? 🎰*\n\n*$LUCK is Referral Marketing Platform, inspired by network marketing.*\n👨‍👩‍👧‍👦 For users of platform, we guarantee referral rewards.\n🏢 For advertisers, we provide pool of referral marketers and various marketing tools.\n\n*🚀 How does $LUCK work? 🚀*\n\n 1️⃣ Advertisers offer their referral events and deposit rewards to $LUCK's pool.\n2️⃣ Platform users do referral marketing for the Advertisers.\n3️⃣ Users get massive referral rewards from $LUCK's pool.\n4️⃣ Users will get more rewards when their friends do marketing.\n5️⃣ Advertisers get marketed by platform users.\n\n$LUCK aim to create synergy by connecting marketers and advertisers.\n*🍀 Join LUCK, Grow together. $LUCK will make your wallet LUCKY 🍀*",
                    reply_markup = mu,
                    parse_mode = "Markdown")
 
-# def foo(update, context):
-#     bot = telepot.Bot(TOKEN)
-#     btn = BT(text = "🍀 Visit LUCK WHITELIST page 🍀", url = "", callback_data = "1")
-#     mu = MU(inline_keyboard = [[btn]])
-#     bot.sendVideo(chat_id = '@official_LUCK_community',
-#         video="https://t.me/official_LUCK_community/282",
-#         caption="If you have a marketing proposal to present to Project LUCK, DM @luckclever. *Clever* will kindly inform you of the marketing method using Chain Letter Protocol.",
-#         reply_markup = mu,
-#         parse_mode = "Markdown")
 
 def main():
     # Create the Updater and pass it your bot's token.
