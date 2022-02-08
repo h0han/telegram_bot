@@ -418,7 +418,7 @@ def social_link(update, context):
 
     try:
         bot.sendPhoto(chat_id = '@official_LUCK_community',
-            photo="https://t.me/official_LUCK_community/497",
+            photo="https://t.me/official_LUCK_community/509",
             caption="*💖 WHY IS $LUCK TO SUCCESS? 💖*\n\n*🎁 Spread to Earn 🎁*\nGreat spreading rewards for holders (At least $10 per 1 spreader)\n*Spreading reward + Spread of luck = Mooning luck = GET RICH*\n\n*🎁 Endless Buyback 🎁*\nBuyback the profits generated on the platform to guarantee HOLDERS’ profit.\n\n*🎁 REFERRAL REWARDS 🎁*\n💵Sender💵 🔗 💌Lucky Chain Letter💌 🔗 💶Receiver💶 \n\n\n*💰 $LUCK Token 💰*\n\n*💵 1. REWARD for CONTRIBUTORS 💵*\nPledge referral and mission rewards + Huge Benefits \n\n*💶 2. STAKING 💶*\nApply a high level of consistent APY\n\n*💷 3. BUYBACK 💷*\n$LUCK continues to increase in value\n\n*💴 4. TIER System 💴*\nRaise tiers according to your efforts and get more rewards\n\n",
             reply_markup = mu,
             parse_mode = "Markdown")
@@ -431,7 +431,8 @@ def social_link(update, context):
         print('예외가 발생했습니다.', e)
 
 def spread(update, context):
-    bot = telepot.Bot(TOKEN)
+    token = "5299700400:AAE7bK0gryLsIhNFphmfiQGn1a77s9KqQLg"
+    bot = telepot.Bot(token)
     btn1 = BT(text = "🍀 Official Website 🍀", url = "https://xd.adobe.com/view/2314682e-3f11-491b-9c1e-1fe804a3e242-7647/", callback_data = "1")
     btn2 = BT(text = "🍀 Official Announcement Telegram Channel 🍀", url = "https://t.me/official_LUCK_announcement", callback_data = "2")
     btn3 = BT(text = "🍀 Official Twitter 🍀", url = "https://twitter.com/official_LUCK_", callback_data = "3")
@@ -469,9 +470,9 @@ def spread(update, context):
         #     parse_mode = "Markdown")
 
         for i in chat_id:
-            bot.sendVideo(chat_id = i,
-                video="https://t.me/hermes_test_group/125",
-                caption="*💖 WHY IS $LUCK TO SUCCESS? 💖*\n💌 LUCKY CHAIN LETTERS are very effective in spreading our $LUCK. \n💌 The reward system for ALL CONTRIBUTORS, both recipients and senders \n💌 REFERRAL REWARDS = If someone accesses my link and goes through a simple procedure, the token is rewarded \n\n*💰 $LUCK Token 💰*\n💵 1. REWARD for CONTRIBUTORS \n💶 2. NFT Project : We will create a reward structure to drop tokens to NFT holders or NFTs to token holders. \n💷 3. STAKING & GOVERNANCE \n\n",
+            bot.sendPhoto(chat_id = i,
+                photo="https://t.me/official_LUCK_community/509",
+                caption="*💖 WHY IS $LUCK TO SUCCESS? 💖*\n\n*🎁 Spread to Earn 🎁*\nGreat spreading rewards for holders (At least $10 per 1 spreader)\n*Spreading reward + Spread of luck = Mooning luck = GET RICH*\n\n*🎁 Endless Buyback 🎁*\nBuyback the profits generated on the platform to guarantee HOLDERS’ profit.\n\n*🎁 REFERRAL REWARDS 🎁*\n💵Sender💵 🔗 💌Lucky Chain Letter💌 🔗 💶Receiver💶 \n\n\n*💰 $LUCK Token 💰*\n\n*💵 1. REWARD for CONTRIBUTORS 💵*\nPledge referral and mission rewards + Huge Benefits \n\n*💶 2. STAKING 💶*\nApply a high level of consistent APY\n\n*💷 3. BUYBACK 💷*\n$LUCK continues to increase in value\n\n*💴 4. TIER System 💴*\nRaise tiers according to your efforts and get more rewards\n\n",
                 reply_markup = mu,
                 parse_mode = "Markdown")
         
