@@ -417,10 +417,15 @@ def social_link(update, context):
     mu = MU(inline_keyboard = [[btn1], [btn2], [btn3], [btn4]])
 
     try:
-        bot.sendMessage(chat_id = '@official_LUCK_community',
-            text = "*💖 WHY IS $LUCK TO SUCCESS? 💖*\n\n*🎁 Chain Letter Protocol(CLP) 🎁*\nThe most powerful marketing protocol in crypto & real world \n\n*🎁 The amazing reward system 🎁*\n For ALL LUCK Ecosystem CONTRIBUTORS\n\n*🎁 REFERRAL REWARDS 🎁*\n💵Sender💵 🔗 💌Lucky Chain Letter💌 🔗 💶Receiver💶 \n\n\n*💰 $LUCK Token 💰*\n\n*💵 1. REWARD for CONTRIBUTORS 💵*\nPledge referral and mission rewards + Huge Benefits \n\n*💶 2. STAKING 💶*\nApply a high level of consistent APY\n\n*💷 3. BUYBACK 💷*\n$LUCK continues to increase in value\n\n*💴 4. TIER System 💴*\nRaise tiers according to your efforts and get more rewards\n\n",
+        bot.sendPhoto(chat_id = '@official_LUCK_community',
+            photo="https://t.me/official_LUCK_community/497",
+            caption="*💖 WHY IS $LUCK TO SUCCESS? 💖*\n\n*🎁 Chain Letter Protocol(CLP) 🎁*\nThe most powerful marketing protocol in crypto & real world \n\n*🎁 The amazing reward system 🎁*\n For ALL LUCK Ecosystem CONTRIBUTORS\n\n*🎁 REFERRAL REWARDS 🎁*\n💵Sender💵 🔗 💌Lucky Chain Letter💌 🔗 💶Receiver💶 \n\n\n*💰 $LUCK Token 💰*\n\n*💵 1. REWARD for CONTRIBUTORS 💵*\nPledge referral and mission rewards + Huge Benefits \n\n*💶 2. STAKING 💶*\nApply a high level of consistent APY\n\n*💷 3. BUYBACK 💷*\n$LUCK continues to increase in value\n\n*💴 4. TIER System 💴*\nRaise tiers according to your efforts and get more rewards\n\n",
             reply_markup = mu,
             parse_mode = "Markdown")
+        # bot.sendMessage(chat_id = '@official_LUCK_community',
+        #     text = "*💖 WHY IS $LUCK TO SUCCESS? 💖*\n\n*🎁 Chain Letter Protocol(CLP) 🎁*\nThe most powerful marketing protocol in crypto & real world \n\n*🎁 The amazing reward system 🎁*\n For ALL LUCK Ecosystem CONTRIBUTORS\n\n*🎁 REFERRAL REWARDS 🎁*\n💵Sender💵 🔗 💌Lucky Chain Letter💌 🔗 💶Receiver💶 \n\n\n*💰 $LUCK Token 💰*\n\n*💵 1. REWARD for CONTRIBUTORS 💵*\nPledge referral and mission rewards + Huge Benefits \n\n*💶 2. STAKING 💶*\nApply a high level of consistent APY\n\n*💷 3. BUYBACK 💷*\n$LUCK continues to increase in value\n\n*💴 4. TIER System 💴*\nRaise tiers according to your efforts and get more rewards\n\n",
+        #     reply_markup = mu,
+        #     parse_mode = "Markdown")
 
     except Exception as e:    # 모든 예외의 에러 메시지를 출력할 때는 Exception을 사용
         print('예외가 발생했습니다.', e)
@@ -543,10 +548,8 @@ def main():
     dp.add_handler(CommandHandler("rule", rule))
     dp.add_handler(CommandHandler("airdrop", airdrop)) # airdrop page 작성해야함
     dp.add_handler(CommandHandler("whitelist", whitelist)) #whitelist 링크 작성 필요
-    dp.add_handler(CommandHandler("presale", presale))
+    dp.add_handler(CommandHandler("presale", presale)) #presale 링크 작성, token address 적용
     dp.add_handler(CommandHandler("luck", luck))
-    dp.add_handler(CommandHandler("sir", marketing))
-    dp.add_handler(CommandHandler("proposal", marketing))
     dp.add_handler(CommandHandler("marketing", marketing))
     # dp.add_handler(CommandHandler("keyword", keyword))
     # dp.add_handler(CommandHandler("marketing", sir))
