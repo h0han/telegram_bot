@@ -526,7 +526,7 @@ def luck(update, context):
     mu = MU(inline_keyboard = [[btn1], [btn2], [btn3], [btn4]])
     
     bot.sendMessage(chat_id = '@official_LUCK_community',
-                   text = "*🎰 What is $LUCK? 🎰*\n\n*$LUCK is Referral Marketing Platform, inspired by network marketing.*\n👨‍👩‍👧‍👦 For users of platform, we guarantee referral rewards.\n🏢 For advertisers, we provide pool of referral marketers and various marketing tools.\n\n*🚀 How does $LUCK work? 🚀*\n\n 1️⃣ Advertisers offer their referral events and deposit rewards to $LUCK's pool.\n2️⃣ Platform users do referral marketing for the Advertisers.\n3️⃣ Users get massive referral rewards from $LUCK's pool.\n4️⃣ Users will get more rewards when their friends do marketing.\n5️⃣ Advertisers get marketed by platform users.\n\n$LUCK aim to create synergy by connecting marketers and advertisers.\n*🍀 Join LUCK, Grow together. $LUCK will make your wallet LUCKY 🍀*",
+                   text = "*🎰 What is $LUCK? 🎰*\n\n*$LUCK is Referral Marketing Platform, inspired by network marketing.*\n👨‍👩‍👧‍👦 For users of platform, we guarantee referral rewards.\n🏢 For advertisers, we provide pool of referral marketers and various marketing tools.\n\n*🚀 How does $LUCK work? 🚀*\n\n1️⃣ Advertisers offer their referral events and deposit rewards to $LUCK's pool.\n2️⃣ Platform users do referral marketing for the Advertisers.\n3️⃣ Users get massive referral rewards from $LUCK's pool.\n4️⃣ Users will get more rewards when their friends do marketing.\n5️⃣ Advertisers get marketed by platform users.\n\n$LUCK aim to create synergy by connecting marketers and advertisers.\n*🍀 Join LUCK, Grow together. $LUCK will make your wallet LUCKY 🍀*",
                    reply_markup = mu,
                    parse_mode = "Markdown")
 
@@ -541,9 +541,9 @@ def main():
     dp.add_handler(CommandHandler("shill", social_link))
     # dp.add_handler(CommandHandler("spread", spread))
     dp.add_handler(CommandHandler("rule", rule))
-    dp.add_handler(CommandHandler("airdrop", airdrop)) # airdrop page 작성해야함
-    dp.add_handler(CommandHandler("whitelist", whitelist)) #whitelist 링크 작성 필요
-    dp.add_handler(CommandHandler("presale", presale))
+    # dp.add_handler(CommandHandler("airdrop", airdrop)) # airdrop page 작성해야함
+    # dp.add_handler(CommandHandler("whitelist", whitelist)) #whitelist 링크 작성 필요
+    # dp.add_handler(CommandHandler("presale", presale))
     dp.add_handler(CommandHandler("luck", luck))
     dp.add_handler(CommandHandler("sir", marketing))
     dp.add_handler(CommandHandler("proposal", marketing))
