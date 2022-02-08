@@ -470,11 +470,15 @@ def spread(update, context):
         #     parse_mode = "Markdown")
 
         for i in chat_id:
-            bot.sendPhoto(chat_id = i,
-                photo="https://t.me/official_LUCK_community/509",
-                caption="*💖 WHY IS $LUCK TO SUCCESS? 💖*\n\n*🎁 Spread to Earn 🎁*\nGreat spreading rewards for holders (At least $10 per 1 spreader)\n*Spreading reward + Spread of luck = Mooning luck = GET RICH*\n\n*🎁 Endless Buyback 🎁*\nBuyback the profits generated on the platform to guarantee HOLDERS’ profit.\n\n*🎁 REFERRAL REWARDS 🎁*\n💵Sender💵 🔗 💌Lucky Chain Letter💌 🔗 💶Receiver💶 \n\n\n*💰 $LUCK Token 💰*\n\n*💵 1. REWARD for CONTRIBUTORS 💵*\nPledge referral and mission rewards + Huge Benefits \n\n*💶 2. STAKING 💶*\nApply a high level of consistent APY\n\n*💷 3. BUYBACK 💷*\n$LUCK continues to increase in value\n\n*💴 4. TIER System 💴*\nRaise tiers according to your efforts and get more rewards\n\n",
+            bot.sendMessage(chat_id = i,
+                text="*💖 WHY IS $LUCK TO SUCCESS? 💖*\n\n*🎁 Spread to Earn 🎁*\nGreat spreading rewards for holders (At least $10 per 1 spreader)\n*Spreading reward + Spread of luck = Mooning luck = GET RICH*\n\n*🎁 Endless Buyback 🎁*\nBuyback the profits generated on the platform to guarantee HOLDERS’ profit.\n\n*🎁 REFERRAL REWARDS 🎁*\n💵Sender💵 🔗 💌Lucky Chain Letter💌 🔗 💶Receiver💶 \n\n\n*💰 $LUCK Token 💰*\n\n*💵 1. REWARD for CONTRIBUTORS 💵*\nPledge referral and mission rewards + Huge Benefits \n\n*💶 2. STAKING 💶*\nApply a high level of consistent APY\n\n*💷 3. BUYBACK 💷*\n$LUCK continues to increase in value\n\n*💴 4. TIER System 💴*\nRaise tiers according to your efforts and get more rewards\n\n",
                 reply_markup = mu,
                 parse_mode = "Markdown")
+            # bot.sendPhoto(chat_id = i,
+            #     photo="https://t.me/official_LUCK_community/509",
+            #     caption="*💖 WHY IS $LUCK TO SUCCESS? 💖*\n\n*🎁 Spread to Earn 🎁*\nGreat spreading rewards for holders (At least $10 per 1 spreader)\n*Spreading reward + Spread of luck = Mooning luck = GET RICH*\n\n*🎁 Endless Buyback 🎁*\nBuyback the profits generated on the platform to guarantee HOLDERS’ profit.\n\n*🎁 REFERRAL REWARDS 🎁*\n💵Sender💵 🔗 💌Lucky Chain Letter💌 🔗 💶Receiver💶 \n\n\n*💰 $LUCK Token 💰*\n\n*💵 1. REWARD for CONTRIBUTORS 💵*\nPledge referral and mission rewards + Huge Benefits \n\n*💶 2. STAKING 💶*\nApply a high level of consistent APY\n\n*💷 3. BUYBACK 💷*\n$LUCK continues to increase in value\n\n*💴 4. TIER System 💴*\nRaise tiers according to your efforts and get more rewards\n\n",
+            #     reply_markup = mu,
+            #     parse_mode = "Markdown")
         
         
     except Exception as e:    # 모든 예외의 에러 메시지를 출력할 때는 Exception을 사용
