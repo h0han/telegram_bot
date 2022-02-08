@@ -460,8 +460,8 @@ def spread(update, context):
     # else:
     #     bot.sendMessage(chat_id = '@hermes_test_group', text = "Nothing")
 
-    # chat_id = ['@official_LUCK_community', '@hermes_test_group']
-    chat_id = ['@official_LUCK_community']
+    chat_id = ['@official_LUCK_community', '@hermes_test_group']
+    # chat_id = ['@official_LUCK_community']
 
     try:
         # bot.sendVideo(chat_id = '@hermes_test_group',
