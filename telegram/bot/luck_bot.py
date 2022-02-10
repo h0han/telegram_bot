@@ -408,7 +408,7 @@ def error(update, context, **kwargs):
 #     except Exception as e:    # 모든 예외의 에러 메시지를 출력할 때는 Exception을 사용
 #         print('예외가 발생했습니다.', e)
 
-def social_link(update, context):
+def spread(update, context):
     bot = telepot.Bot(TOKEN)
     btn1 = BT(text = "🍀 Official Website 🍀", url = "http://www.lucktoken.io/", callback_data = "1")
     btn2 = BT(text = "🍀 Official Community 🍀", url = "https://t.me/official_LUCK_community", callback_data = "2")
@@ -431,58 +431,27 @@ def social_link(update, context):
     except Exception as e:    # 모든 예외의 에러 메시지를 출력할 때는 Exception을 사용
         print('예외가 발생했습니다.', e)
 
-def spread(update, context):
-    token = "5299700400:AAE7bK0gryLsIhNFphmfiQGn1a77s9KqQLg"
-    bot = telepot.Bot(token)
+
+def social_link(update, context):
+    bot = telepot.Bot(TOKEN)
     btn1 = BT(text = "🍀 Official Website 🍀", url = "http://www.lucktoken.io/", callback_data = "1")
-    btn2 = BT(text = "🍀 Official Announcement Telegram Channel 🍀", url = "https://t.me/official_LUCK_announcement", callback_data = "2")
-    btn3 = BT(text = "🍀 Official Twitter 🍀", url = "https://twitter.com/official_LUCK_", callback_data = "3")
-    btn4 = BT(text = "🍀 Official Reddit 🍀", url = "https://www.reddit.com/user/official_LUCK_", callback_data = "4")
-    mu = MU(inline_keyboard = [[btn1], [btn2], [btn3], [btn4]])
-
-    # chat_id = []
-    # f = open(os.path.join(os.getcwd() + "/telegram_bot/telegram/bot/spread_test.csv"), 'r', encoding = 'utf-8')
-    # rdr = csv.reader(f)
-    # for line in rdr:
-    #     chat_id.append(line[0])
-    # f.close()
-
-    # file = os.getcwd() + "/telegram_bot/telegram/bot/spread_test.csv"
-    # if os.path.isfile(file):
-    #     bot.sendMessage(chat_id = '@hermes_test_group', text = "Yes, it is a file")
-    # elif os.path.isdir(file):
-    #     bot.sendMessage(chat_id = '@hermes_test_group', text = "Yes, it is a directory")
-    # else:
-    #     bot.sendMessage(chat_id = '@hermes_test_group', text = "Nothing")
-
-    # file = "spread_test.csv"
-    # if os.path.exists(file):
-    #     bot.sendMessage(chat_id = '@hermes_test_group', text = "Yes, it is a file")
-    # else:
-    #     bot.sendMessage(chat_id = '@hermes_test_group', text = "Nothing")
-
-    chat_id = ['@official_LUCK_community', '@hermes_test_group']
-    # chat_id = ['@official_LUCK_community']
+    btn2 = BT(text = "🍀 Official Community 🍀", url = "https://t.me/official_LUCK_community", callback_data = "2")
+    btn3 = BT(text = "🍀 Official Announcement Telegram Channel 🍀", url = "https://t.me/official_LUCK_announcement", callback_data = "3")
+    btn4 = BT(text = "🍀 Official Twitter 🍀", url = "https://twitter.com/official_LUCK_", callback_data = "4")
+    btn5 = BT(text = "🍀 Official Reddit 🍀", url = "https://www.reddit.com/user/official_LUCK_", callback_data = "5")
+    mu = MU(inline_keyboard = [[btn1], [btn2], [btn3], [btn4], [btn5]])
 
     try:
-        # bot.sendVideo(chat_id = '@hermes_test_group',
-        #     video="https://t.me/hermes_test_group/125",
-        #     caption=len(chat_id),
+        bot.sendPhoto(chat_id = '@official_LUCK_community',
+            photo="https://t.me/official_LUCK_community/509",
+            caption="*💖 WHY IS $LUCK TO SUCCESS? 💖*\n\n*🎁 Spread to Earn 🎁*\nGreat spreading rewards for holders (At least $10 per 1 spreader)\n*Spreading reward + Spread of luck = Mooning luck = GET RICH*\n\n*🎁 Endless Buyback 🎁*\nBuyback the profits generated on the platform to guarantee HOLDERS’ profit.\n\n*🎁 REFERRAL REWARDS 🎁*\n💵Sender💵 🔗 💌Lucky Chain Letter💌 🔗 💶Receiver💶 \n\n\n*💰 $LUCK Token 💰*\n\n*💵 1. REWARD for CONTRIBUTORS 💵*\nPledge referral and mission rewards + Huge Benefits \n\n*💶 2. STAKING 💶*\nApply a high level of consistent APY\n\n*💷 3. BUYBACK 💷*\n$LUCK continues to increase in value\n\n*💴 4. TIER System 💴*\nRaise tiers according to your efforts and get more rewards",
+            reply_markup = mu,
+            parse_mode = "Markdown")
+        # bot.sendMessage(chat_id = '@official_LUCK_community',
+        #     text = "*💖 WHY IS $LUCK TO SUCCESS? 💖*\n\n*🎁 Chain Letter Protocol(CLP) 🎁*\nThe most powerful marketing protocol in crypto & real world \n\n*🎁 The amazing reward system 🎁*\n For ALL LUCK Ecosystem CONTRIBUTORS\n\n*🎁 REFERRAL REWARDS 🎁*\n💵Sender💵 🔗 💌Lucky Chain Letter💌 🔗 💶Receiver💶 \n\n\n*💰 $LUCK Token 💰*\n\n*💵 1. REWARD for CONTRIBUTORS 💵*\nPledge referral and mission rewards + Huge Benefits \n\n*💶 2. STAKING 💶*\nApply a high level of consistent APY\n\n*💷 3. BUYBACK 💷*\n$LUCK continues to increase in value\n\n*💴 4. TIER System 💴*\nRaise tiers according to your efforts and get more rewards\n\n",
         #     reply_markup = mu,
         #     parse_mode = "Markdown")
 
-        for i in chat_id:
-            bot.sendMessage(chat_id = i,
-                text="*💖 WHY IS $LUCK TO SUCCESS? 💖*\n\n*🎁 Spread to Earn 🎁*\nGreat spreading rewards for holders (At least $10 per 1 spreader)\n*Spreading reward + Spread of luck = Mooning luck = GET RICH*\n\n*🎁 Endless Buyback 🎁*\nBuyback the profits generated on the platform to guarantee HOLDERS’ profit.\n\n*🎁 REFERRAL REWARDS 🎁*\n💵Sender💵 🔗 💌Lucky Chain Letter💌 🔗 💶Receiver💶 \n\n\n*💰 $LUCK Token 💰*\n\n*💵 1. REWARD for CONTRIBUTORS 💵*\nPledge referral and mission rewards + Huge Benefits \n\n*💶 2. STAKING 💶*\nApply a high level of consistent APY\n\n*💷 3. BUYBACK 💷*\n$LUCK continues to increase in value\n\n*💴 4. TIER System 💴*\nRaise tiers according to your efforts and get more rewards\n\n",
-                reply_markup = mu,
-                parse_mode = "Markdown")
-            # bot.sendPhoto(chat_id = i,
-            #     photo="https://t.me/official_LUCK_community/509",
-            #     caption="*💖 WHY IS $LUCK TO SUCCESS? 💖*\n\n*🎁 Spread to Earn 🎁*\nGreat spreading rewards for holders (At least $10 per 1 spreader)\n*Spreading reward + Spread of luck = Mooning luck = GET RICH*\n\n*🎁 Endless Buyback 🎁*\nBuyback the profits generated on the platform to guarantee HOLDERS’ profit.\n\n*🎁 REFERRAL REWARDS 🎁*\n💵Sender💵 🔗 💌Lucky Chain Letter💌 🔗 💶Receiver💶 \n\n\n*💰 $LUCK Token 💰*\n\n*💵 1. REWARD for CONTRIBUTORS 💵*\nPledge referral and mission rewards + Huge Benefits \n\n*💶 2. STAKING 💶*\nApply a high level of consistent APY\n\n*💷 3. BUYBACK 💷*\n$LUCK continues to increase in value\n\n*💴 4. TIER System 💴*\nRaise tiers according to your efforts and get more rewards\n\n",
-            #     reply_markup = mu,
-            #     parse_mode = "Markdown")
-        
-        
     except Exception as e:    # 모든 예외의 에러 메시지를 출력할 때는 Exception을 사용
         print('예외가 발생했습니다.', e)
     
@@ -563,7 +532,7 @@ def main():
     # dp.add_handler(CommandHandler("proposal", sir))
 #     dp.add_handler(CommandHandler("start", help))
 #     dp.add_handler(CommandHandler("help", help))
-    dp.add_handler(CommandHandler("welcome", set_welcome))
+    # dp.add_handler(CommandHandler("welcome", set_welcome))
 #     dp.add_handler(CommandHandler("goodbye", set_goodbye))
 #     dp.add_handler(CommandHandler("disable_goodbye", disable_goodbye))
 #     dp.add_handler(CommandHandler("lock", lock))
