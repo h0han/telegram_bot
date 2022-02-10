@@ -14,7 +14,7 @@ import os.path
 
 import pickledb
 
-from telegram import ParseMode, TelegramError, Update
+from telegram import ParseMode, TelegramError, Update, chat
 from telegram.ext import Updater, MessageHandler, CommandHandler, Filters
 from telegram.ext.dispatcher import run_async
 
@@ -511,6 +511,10 @@ def luck(update, context):
                    reply_markup = mu,
                    parse_mode = "Markdown")
 
+def baby(update, context):
+    bot = telepot.Bot(TOKEN)
+    bot.sendVideo(chat_id = 'official_LUCK_community',
+            video = 'https://t.me/official_LUCK_community/643')
 
 def main():
     # Create the Updater and pass it your bot's token.
@@ -527,6 +531,7 @@ def main():
     # dp.add_handler(CommandHandler("presale", presale)) #presale 링크 작성, token address 적용
     dp.add_handler(CommandHandler("luck", luck))
     dp.add_handler(CommandHandler("marketing", marketing))
+    dp.add_handler(CommandHandler("baby", baby))
     # dp.add_handler(CommandHandler("keyword", keyword))
     # dp.add_handler(CommandHandler("marketing", sir))
     # dp.add_handler(CommandHandler("proposal", sir))
