@@ -408,6 +408,29 @@ def error(update, context, **kwargs):
 #     except Exception as e:    # 모든 예외의 에러 메시지를 출력할 때는 Exception을 사용
 #         print('예외가 발생했습니다.', e)
 
+def tothemoon(update, context):
+    bot = telepot.Bot(TOKEN)
+    btn1 = BT(text = "🍀 Official Website 🍀", url = "http://www.lucktoken.io/", callback_data = "1")
+    btn2 = BT(text = "🍀 Official Community 🍀", url = "https://t.me/official_LUCK_community", callback_data = "2")
+    btn3 = BT(text = "🍀 Official Announcement Telegram Channel 🍀", url = "https://t.me/official_LUCK_announcement", callback_data = "3")
+    btn4 = BT(text = "🍀 Official Twitter 🍀", url = "https://twitter.com/official_LUCK_", callback_data = "4")
+    btn5 = BT(text = "🍀 Official Reddit 🍀", url = "https://www.reddit.com/user/official_LUCK_", callback_data = "5")
+    mu = MU(inline_keyboard = [[btn1], [btn2], [btn3], [btn4], [btn5]])
+
+    try:
+        bot.sendVideo(chat_id = '@official_LUCK_community',
+            video="https://t.me/official_LUCK_community/643",
+            caption="*💖 WHY IS $LUCK TO SUCCESS? 💖*\n\n*🎁 Spread to Earn 🎁*\nGreat spreading rewards for holders (At least $10 per 1 spreader)\n*Spreading reward + Spread of luck = Mooning luck = GET RICH*\n\n*🎁 Endless Buyback 🎁*\nBuyback the profits generated on the platform to guarantee HOLDERS’ profit.\n\n*🎁 REFERRAL REWARDS 🎁*\n💵Sender💵 🔗 💌Lucky Chain Letter💌 🔗 💶Receiver💶 \n\n\n*💰 $LUCK Token 💰*\n\n*💵 1. REWARD for CONTRIBUTORS 💵*\nPledge referral and mission rewards + Huge Benefits \n\n*💶 2. STAKING 💶*\nApply a high level of consistent APY\n\n*💷 3. BUYBACK 💷*\n$LUCK continues to increase in value\n\n*💴 4. TIER System 💴*\nRaise tiers according to your efforts and get more rewards",
+            reply_markup = mu,
+            parse_mode = "Markdown")
+        # bot.sendMessage(chat_id = '@official_LUCK_community',
+        #     text = "*💖 WHY IS $LUCK TO SUCCESS? 💖*\n\n*🎁 Chain Letter Protocol(CLP) 🎁*\nThe most powerful marketing protocol in crypto & real world \n\n*🎁 The amazing reward system 🎁*\n For ALL LUCK Ecosystem CONTRIBUTORS\n\n*🎁 REFERRAL REWARDS 🎁*\n💵Sender💵 🔗 💌Lucky Chain Letter💌 🔗 💶Receiver💶 \n\n\n*💰 $LUCK Token 💰*\n\n*💵 1. REWARD for CONTRIBUTORS 💵*\nPledge referral and mission rewards + Huge Benefits \n\n*💶 2. STAKING 💶*\nApply a high level of consistent APY\n\n*💷 3. BUYBACK 💷*\n$LUCK continues to increase in value\n\n*💴 4. TIER System 💴*\nRaise tiers according to your efforts and get more rewards\n\n",
+        #     reply_markup = mu,
+        #     parse_mode = "Markdown")
+
+    except Exception as e:    # 모든 예외의 에러 메시지를 출력할 때는 Exception을 사용
+        print('예외가 발생했습니다.', e)
+
 def spread(update, context):
     bot = telepot.Bot(TOKEN)
     btn1 = BT(text = "🍀 Official Website 🍀", url = "http://www.lucktoken.io/", callback_data = "1")
@@ -531,6 +554,7 @@ def main():
     print("Operating well!")
     dp.add_handler(CommandHandler("shill", social_link))
     dp.add_handler(CommandHandler("spread", spread))
+    dp.add_handler(CommandHandler("tothemoon", tothemoon))
     dp.add_handler(CommandHandler("rule", rule))
     # dp.add_handler(CommandHandler("airdrop", airdrop)) # airdrop page 작성해야함
     # dp.add_handler(CommandHandler("whitelist", whitelist)) #whitelist 링크 작성 필요
