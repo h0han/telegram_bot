@@ -513,8 +513,8 @@ def luck(update, context):
 
 def baby(update, context):
     bot = telepot.Bot(TOKEN)
-    bot.sendVideo(chat_id = 'official_LUCK_community',
-            video = 'https://t.me/official_LUCK_community/643')
+    bot.sendPhoto(chat_id = 'official_LUCK_community',
+            photo = 'https://t.me/official_LUCK_community/643')
 
 def main():
     # Create the Updater and pass it your bot's token.
