@@ -516,6 +516,12 @@ def baby(update, context):
     bot.sendVideo(chat_id = '@official_LUCK_community',
             video = 'https://t.me/official_LUCK_community/643')
 
+
+def lucky_chain_letter(update, context):
+    bot = telepot.Bot(TOKEN)
+    bot.sendVideo(chat_id = '@official_LUCK_community',
+            video = 'https://t.me/official_LUCK_community/650')
+
 def main():
     # Create the Updater and pass it your bot's token.
     updater = Updater(TOKEN, workers=10, use_context=True)
@@ -532,6 +538,7 @@ def main():
     dp.add_handler(CommandHandler("luck", luck))
     dp.add_handler(CommandHandler("marketing", marketing))
     dp.add_handler(CommandHandler("baby", baby))
+    dp.add_handler(CommandHandler("lucky_chain_letter", lucky_chain_letter))
     # dp.add_handler(CommandHandler("keyword", keyword))
     # dp.add_handler(CommandHandler("marketing", sir))
     # dp.add_handler(CommandHandler("proposal", sir))
