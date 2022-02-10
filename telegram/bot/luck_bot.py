@@ -563,7 +563,7 @@ def main():
     # dp.add_handler(CommandHandler("proposal", sir))
 #     dp.add_handler(CommandHandler("start", help))
 #     dp.add_handler(CommandHandler("help", help))
-    # dp.add_handler(CommandHandler("welcome", set_welcome))
+    dp.add_handler(CommandHandler("welcome", set_welcome))
 #     dp.add_handler(CommandHandler("goodbye", set_goodbye))
 #     dp.add_handler(CommandHandler("disable_goodbye", disable_goodbye))
 #     dp.add_handler(CommandHandler("lock", lock))
