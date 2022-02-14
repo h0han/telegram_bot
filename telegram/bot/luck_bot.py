@@ -586,6 +586,7 @@ def main():
     dp.add_handler(CommandHandler("baby", baby))
     dp.add_handler(CommandHandler("baby_get_luck", baby_get_luck))
     dp.add_handler(CommandHandler("lucky_chain_letter", lucky_chain_letter))
+    dp.add_handler(CommandHandler("push", push))
     # dp.add_handler(CommandHandler("keyword", keyword))
     # dp.add_handler(CommandHandler("marketing", sir))
     # dp.add_handler(CommandHandler("proposal", sir))
