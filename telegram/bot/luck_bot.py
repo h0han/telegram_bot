@@ -564,6 +564,31 @@ def push(update, context):
         reply_markup = mu,
         parse_mode = "Markdown")
 
+def luck(update, context):
+    bot = telepot.Bot(TOKEN)
+    btn1 = BT(text = "🍀 Official Website 🍀", url = "http://www.lucktoken.io/", callback_data = "1")
+    btn2 = BT(text = "🍀 Official Announcement Telegram Channel 🍀", url = "https://t.me/official_LUCK_announcement", callback_data = "2")
+    btn3 = BT(text = "🍀 Official Twitter 🍀", url = "https://twitter.com/official_LUCK_", callback_data = "3")
+    btn4 = BT(text = "🍀 Official Reddit 🍀", url = "https://www.reddit.com/user/official_LUCK_", callback_data = "4")
+    mu = MU(inline_keyboard = [[btn1], [btn2], [btn3], [btn4]])
+    
+    bot.sendMessage(chat_id = '@hermes_test_group',
+                   text = "testluck",
+                   reply_markup = mu,
+                   parse_mode = "Markdown")
+
+def rule(update, context):
+    bot = telepot.Bot(TOKEN)
+    btn1 = BT(text = "🍀 Official Website 🍀", url = "http://www.lucktoken.io/", callback_data = "1")
+    btn2 = BT(text = "🍀 Official Announcement Telegram Channel 🍀", url = "https://t.me/official_LUCK_announcement", callback_data = "2")
+    btn3 = BT(text = "🍀 Official Twitter 🍀", url = "https://twitter.com/official_LUCK_", callback_data = "3")
+    btn4 = BT(text = "🍀 Official Reddit 🍀", url = "https://www.reddit.com/user/official_LUCK_", callback_data = "4")
+    mu = MU(inline_keyboard = [[btn1], [btn2], [btn3], [btn4]])
+    
+    bot.sendMessage(chat_id = '@hermes_test_group',
+                   text = "testrule",
+                   reply_markup = mu,
+                   parse_mode = "Markdown")
     
 
 def main():
