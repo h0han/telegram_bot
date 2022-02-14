@@ -560,7 +560,7 @@ def push(update, context):
 
     bot.sendPhoto(chat_id = '@hermes_test_group',
         photo="https://t.me/hermes_test_group/171",
-        caption="*💖 PUSH THE COMMAND 💖*\n\n/shill\n/rule\n/tothemoon\n/luck\n/marketing\n/baby\n/baby_get_luck\n/lucky_chain_letter",
+        caption="*💖 PUSH THE COMMAND 💖*\n\n /shill \n /rule \n /tothemoon \n /luck \n /marketing \n /baby \n /baby_get_luck \n /lucky_chain_letter",
         reply_markup = mu,
         parse_mode = "Markdown")
 
