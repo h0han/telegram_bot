@@ -549,21 +549,6 @@ def lucky_chain_letter(update, context):
     bot.sendVideo(chat_id = '@official_LUCK_community',
             video = 'https://t.me/official_LUCK_community/650')
 
-# def push(update, context):
-#     bot = telepot.Bot(TOKEN)
-#     btn1 = BT(text = "🍀 Official Website 🍀", url = "http://www.lucktoken.io/", callback_data = "1")
-#     btn2 = BT(text = "🍀 Official Community 🍀", url = "https://t.me/official_LUCK_community", callback_data = "2")
-#     btn3 = BT(text = "🍀 Official Announcement Telegram Channel 🍀", url = "https://t.me/official_LUCK_announcement", callback_data = "3")
-#     btn4 = BT(text = "🍀 Official Twitter 🍀", url = "https://twitter.com/official_LUCK_", callback_data = "4")
-#     btn5 = BT(text = "🍀 Official Reddit 🍀", url = "https://www.reddit.com/user/official_LUCK_", callback_data = "5")
-#     mu = MU(inline_keyboard = [[btn1], [btn2], [btn3], [btn4], [btn5]])
-
-#     bot.sendPhoto(chat_id = '@official_LUCK_community',
-#         photo="https://t.me/official_LUCK_community/801",
-#         caption="*💖 PUSH THE COMMAND 💖*\n\n/shill\n/rule\n/tothemoon\n/luck\n/marketing\n/baby\n/baby_get_luck\n/lucky_chain_letter",
-#         reply_markup = mu,
-#         parse_mode = "Markdown")
-
 def push(update, context):
     bot = telepot.Bot(TOKEN)
     btn1 = BT(text = "🍀 Official Website 🍀", url = "http://www.lucktoken.io/", callback_data = "1")
@@ -573,11 +558,12 @@ def push(update, context):
     btn5 = BT(text = "🍀 Official Reddit 🍀", url = "https://www.reddit.com/user/official_LUCK_", callback_data = "5")
     mu = MU(inline_keyboard = [[btn1], [btn2], [btn3], [btn4], [btn5]])
 
-    bot.sendPhoto(chat_id = '@official_LUCK_community',
-        photo="https://t.me/official_LUCK_community/801",
-        caption="*💖 PUSH THE COMMAND 💖*\n\n/shill",
+    bot.sendPhoto(chat_id = '@hermes_test_group',
+        photo="https://t.me/hermes_test_group/171",
+        caption="*💖 PUSH THE COMMAND 💖*\n\n/shill\n/rule\n/tothemoon\n/luck\n/marketing\n/baby\n/baby_get_luck\n/lucky_chain_letter",
         reply_markup = mu,
         parse_mode = "Markdown")
+
     
 
 def main():
