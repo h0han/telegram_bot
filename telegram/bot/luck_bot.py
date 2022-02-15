@@ -564,6 +564,16 @@ def push(update, context):
         reply_markup = mu,
         parse_mode = "Markdown")
     
+def referral(update, context):
+    bot = telepot.Bot(TOKEN)
+    btn1 = BT(text = "🍀 Event Link 🍀", url = "https://lucktoken.io/giveaway", callback_data = "1")
+    mu = MU(inline_keyboard = [[btn1]])
+
+    bot.sendMessage(chat_id = '@official_LUCK_community',
+                    text = "*🎰 What is the Referral Reward? 🎰*\n\n*👨‍👩‍👧‍👦 Refer Your Friends! 👨‍👩‍👧‍👦*\nBring a friend through your referral link and you can get the *Referral Rewards*!\nIf your friend brings another friend, you can get the *Bonus Referral Rewards*!\n\n*✏️ Complete the mission!*\nRegister your wallet address to receive rewards, and complete a simple SNS follow-up procedure to receive *REWARDS* for mission completion!\n\n*🚀 How to get Referral Rewards? 🚀*\n1️⃣ Complete a very simple mission!\n2️⃣ You'll get a reward!\n3️⃣ Issue a referral link!\n4️⃣ Send me a link!\n5️⃣ Get plenty of reward!\n\n*👇LINK👇*\nlucktoken.io/giveaway\n\n*🍀 Join LUCK, Grow together. $LUCK will make your wallet LUCKY 🍀*",
+                    reply_markup = mu,
+                    parse_mode = "Markdown")
+
 
 def main():
     # Create the Updater and pass it your bot's token.
@@ -585,6 +595,7 @@ def main():
     dp.add_handler(CommandHandler("baby_get_luck", baby_get_luck))
     dp.add_handler(CommandHandler("lucky_chain_letter", lucky_chain_letter))
     dp.add_handler(CommandHandler("push", push))
+    dp.add_handler(CommandHandler("referral", referral))
     # dp.add_handler(CommandHandler("keyword", keyword))
     # dp.add_handler(CommandHandler("marketing", sir))
     # dp.add_handler(CommandHandler("proposal", sir))
