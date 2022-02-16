@@ -496,7 +496,7 @@ def airdrop(update, context):
 
 def whitelist(update, context):
     bot = telepot.Bot(TOKEN)
-    btn = BT(text = "🍀 Visit LUCK WHITELIST page 🍀", url = "", callback_data = "1")
+    btn = BT(text = "🍀 Visit LUCK WHITELIST page 🍀", url = "https://lucktoken.io/giveaway", callback_data = "1")
     mu = MU(inline_keyboard = [[btn]])
     bot.sendMessage(chat_id = '@official_LUCK_community',
                    text = "*✨ WHITELIST ANNOUNCEMENT ✨*\n\n*Please join the campaign quickly ：*\n👉 (link)\n\n🍀 Participate to be on the $LUCK Whitelist!\n🍀 Apply for the whitelist, create your referral link, and get $LUCK!\n\n*⏰ DEADLINE ⏰*\nWhitelist registration ends at: 09:00 AM UTC, *February 28th*.\n\nWINNERS WILL BE ANNOUNCED OUR OFFICIAL CHANNEL AFTER THE END OF THIS EVENT\n\n*🗣 The more friends you refer, greater the chances you'll win!*\n🔸 1st place: 1 BNB (full allocation)\n🔸 2nd place: 0.7 BNB (half allocation)\n🔸 3rd place:  0.3 BNB (one third allocation)\n\n",
