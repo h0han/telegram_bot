@@ -576,7 +576,7 @@ def referral(update, context):
 
 def launch(update, context):
     bot = telepot.Bot(TOKEN)
-    btn1 = BT(text = "🍀 Event Link 🍀", url = "https://pancakeswap.finance/", callback_data = "1")
+    btn1 = BT(text = "🍀 Go to PCS 🍀", url = "https://pancakeswap.finance/", callback_data = "1")
     mu = MU(inline_keyboard = [[btn1]])
 
     bot.sendMessage(chat_id = '@official_LUCK_community',
