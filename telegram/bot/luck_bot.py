@@ -606,7 +606,7 @@ def main():
     dp.add_handler(CommandHandler("lucky_chain_letter", lucky_chain_letter))
     dp.add_handler(CommandHandler("push", push))
     dp.add_handler(CommandHandler("launch", launch))
-    # dp.add_handler(CommandHandler("referral", referral))
+    dp.add_handler(CommandHandler("referral", referral))
     # dp.add_handler(CommandHandler("keyword", keyword))
     # dp.add_handler(CommandHandler("marketing", sir))
     # dp.add_handler(CommandHandler("proposal", sir))
