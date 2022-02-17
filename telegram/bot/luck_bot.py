@@ -597,7 +597,7 @@ def main():
     dp.add_handler(CommandHandler("tothemoon", tothemoon))
     dp.add_handler(CommandHandler("rule", rule))
     # dp.add_handler(CommandHandler("airdrop", airdrop)) # airdrop page 작성해야함
-    dp.add_handler(CommandHandler("whitelist", whitelist)) #whitelist 링크 작성 필요
+    dp.add_handler(CommandHandler("whitelist", whitelist))
     # dp.add_handler(CommandHandler("presale", presale)) #presale 링크 작성, token address 적용
     dp.add_handler(CommandHandler("luck", luck))
     dp.add_handler(CommandHandler("marketing", marketing))
