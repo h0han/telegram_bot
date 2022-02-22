@@ -524,7 +524,7 @@ def marketing(update, context):
     btn = BT(text = "🍀 Send marketing proposal to clever 🍀", url = "https://t.me/luckclever", callback_data = "1")
     mu = MU(inline_keyboard = [[btn]])
     bot.sendMessage(chat_id = '@official_LUCK_community',
-                   text = "If you have a marketing proposal to present to Project LUCK, DM @luckclever",
+                   text = "If you have a marketing proposal to present to Project LUCK, DM to @luckclever",
                    reply_markup = mu,
                    parse_mode = "Markdown")
 
