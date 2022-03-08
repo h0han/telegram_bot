@@ -462,7 +462,9 @@ def social_link(update, context):
     btn3 = BT(text = "🍀 Official Announcement Telegram Channel 🍀", url = "https://t.me/official_LUCK_announcement", callback_data = "3")
     btn4 = BT(text = "🍀 Official Twitter 🍀", url = "https://twitter.com/official_LUCK_", callback_data = "4")
     btn5 = BT(text = "🍀 Official Reddit 🍀", url = "https://www.reddit.com/user/official_LUCK_", callback_data = "5")
-    mu = MU(inline_keyboard = [[btn1], [btn2], [btn3], [btn4], [btn5]])
+    btn6 = BT(text = "🍀 Audit 🍀", url = "https://auditrate.tech/images/pdf/Luck_0x596eFdFF4bc365d1d32d0EcED114C41789f18b37.pdf", callback_data = "6")
+    btn7 = BT(text = "🍀 KYC 🍀", url = "https://auditrate.tech/certificate/certificate_Luck.html", callback_data = "7")
+    mu = MU(inline_keyboard = [[btn1], [btn2], [btn3], [btn4], [btn5], [btn6, btn7]])
 
     try:
         bot.sendPhoto(chat_id = '@official_LUCK_community',
