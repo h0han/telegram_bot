@@ -593,6 +593,20 @@ def launch(update, context):
                     reply_markup = mu,
                     parse_mode = "Markdown")
 
+def doxx(update, context):
+    bot = telepot.Bot(TOKEN)
+    btn1 = BT(text = "🍀 Audit 🍀", url = "https://auditrate.tech/images/pdf/Luck_0x596eFdFF4bc365d1d32d0EcED114C41789f18b37.pdf", callback_data = "1")
+    btn2 = BT(text = "🍀 KYC 🍀", url = "https://auditrate.tech/certificate/certificate_Luck.html", callback_data = "2")
+    mu = MU(inline_keyboard = [[btn1, btn2]])
+
+    try:
+        bot.sendMessage(chat_id = '@official_LUCK_community',
+                    text = "Doxx(*Audit & KYC*) of project $LUCK can be checked through the next button.\n\n*✨ Get $LUCK & Getting Lucky! ✨*",
+                    reply_markup = mu,
+                    parse_mode = "Markdown")
+
+    except Exception as e:    # 모든 예외의 에러 메시지를 출력할 때는 Exception을 사용
+        print('예외가 발생했습니다.', e)
 
 def main():
     # Create the Updater and pass it your bot's token.
@@ -616,6 +630,8 @@ def main():
     dp.add_handler(CommandHandler("push", push))
     dp.add_handler(CommandHandler("launch", launch))
     dp.add_handler(CommandHandler("referral", referral))
+    dp.add_handler(CommandHandler("audit", doxx))
+    dp.add_handler(CommandHandler("kyc", doxx))
     # dp.add_handler(CommandHandler("keyword", keyword))
     # dp.add_handler(CommandHandler("marketing", sir))
     # dp.add_handler(CommandHandler("proposal", sir))
